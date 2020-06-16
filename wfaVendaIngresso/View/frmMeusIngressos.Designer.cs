@@ -427,7 +427,7 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1050, 600);
+            this.ClientSize = new System.Drawing.Size(1050, 621);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.pnIngresso4);
             this.Controls.Add(this.panel4);

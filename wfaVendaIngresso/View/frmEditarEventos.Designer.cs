@@ -46,7 +46,10 @@
             this.txtDescricaoEvento = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtFoto = new System.Windows.Forms.TextBox();
+            this.barraVertical = new System.Windows.Forms.Panel();
+            this.btnFechar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcbEvento)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).BeginInit();
             this.SuspendLayout();
             // 
             // btnTrocaFoto
@@ -255,12 +258,36 @@
             this.txtFoto.Size = new System.Drawing.Size(351, 16);
             this.txtFoto.TabIndex = 51;
             // 
+            // barraVertical
+            // 
+            this.barraVertical.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barraVertical.Location = new System.Drawing.Point(0, 0);
+            this.barraVertical.Name = "barraVertical";
+            this.barraVertical.Size = new System.Drawing.Size(1280, 12);
+            this.barraVertical.TabIndex = 54;
+            this.barraVertical.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barraVertical_MouseDown);
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFechar.Image = global::wfaVendaIngresso.Properties.Resources.icon_cerrar2;
+            this.btnFechar.Location = new System.Drawing.Point(388, 18);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(20, 20);
+            this.btnFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnFechar.TabIndex = 55;
+            this.btnFechar.TabStop = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
             // frmEditarEventos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.btnFechar);
+            this.Controls.Add(this.barraVertical);
             this.Controls.Add(this.btnTrocaFoto);
             this.Controls.Add(this.lblCadastroUsuario);
             this.Controls.Add(this.txtFoto);
@@ -281,8 +308,10 @@
             this.Controls.Add(this.btnSalvar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmEditarEventos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Editar Evento";
             ((System.ComponentModel.ISupportInitialize)(this.pcbEvento)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,5 +337,7 @@
         public System.Windows.Forms.TextBox txtDescricaoEvento;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtFoto;
+        private System.Windows.Forms.Panel barraVertical;
+        private System.Windows.Forms.PictureBox btnFechar;
     }
 }

@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.menuVertical = new System.Windows.Forms.Panel();
-            this.panelContainer = new System.Windows.Forms.Panel();
-            this.frmPrincipal = new System.Windows.Forms.Panel();
-            this.pnlContainer = new System.Windows.Forms.Panel();
-            this.barraVertical = new System.Windows.Forms.Panel();
             this.btnSobre = new System.Windows.Forms.Button();
             this.btnMeusIngressos = new System.Windows.Forms.Button();
             this.btnMinhaConta = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
+            this.panelContainer = new System.Windows.Forms.Panel();
+            this.frmPrincipal = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.barraVertical = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.pnlContainer = new System.Windows.Forms.Panel();
             this.btnFechar = new System.Windows.Forms.PictureBox();
             this.menuVertical.SuspendLayout();
             this.frmPrincipal.SuspendLayout();
-            this.barraVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.barraVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).BeginInit();
             this.SuspendLayout();
@@ -61,53 +61,6 @@
             this.menuVertical.Name = "menuVertical";
             this.menuVertical.Size = new System.Drawing.Size(253, 650);
             this.menuVertical.TabIndex = 7;
-            // 
-            // panelContainer
-            // 
-            this.panelContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelContainer.AutoScroll = true;
-            this.panelContainer.BackColor = System.Drawing.Color.White;
-            this.panelContainer.Location = new System.Drawing.Point(253, 63);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(1050, 587);
-            this.panelContainer.TabIndex = 9;
-            // 
-            // frmPrincipal
-            // 
-            this.frmPrincipal.AutoScroll = true;
-            this.frmPrincipal.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.frmPrincipal.Controls.Add(this.panelContainer);
-            this.frmPrincipal.Controls.Add(this.barraVertical);
-            this.frmPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.frmPrincipal.Location = new System.Drawing.Point(0, 0);
-            this.frmPrincipal.Name = "frmPrincipal";
-            this.frmPrincipal.Size = new System.Drawing.Size(1300, 650);
-            this.frmPrincipal.TabIndex = 8;
-            this.frmPrincipal.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barraVertical_MouseDown);
-            // 
-            // pnlContainer
-            // 
-            this.pnlContainer.Location = new System.Drawing.Point(0, 62);
-            this.pnlContainer.Name = "pnlContainer";
-            this.pnlContainer.Size = new System.Drawing.Size(1059, 588);
-            this.pnlContainer.TabIndex = 11;
-            // 
-            // barraVertical
-            // 
-            this.barraVertical.BackColor = System.Drawing.Color.Transparent;
-            this.barraVertical.BackgroundImage = global::wfaVendaIngresso.Properties.Resources.account_circle_white_192x192;
-            this.barraVertical.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.barraVertical.Controls.Add(this.btnMinimizar);
-            this.barraVertical.Controls.Add(this.pnlContainer);
-            this.barraVertical.Controls.Add(this.btnFechar);
-            this.barraVertical.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barraVertical.Location = new System.Drawing.Point(0, 0);
-            this.barraVertical.Name = "barraVertical";
-            this.barraVertical.Size = new System.Drawing.Size(1300, 66);
-            this.barraVertical.TabIndex = 10;
-            this.barraVertical.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barraVertical_MouseDown);
             // 
             // btnSobre
             // 
@@ -173,6 +126,31 @@
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+            // panelContainer
+            // 
+            this.panelContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelContainer.AutoScroll = true;
+            this.panelContainer.BackColor = System.Drawing.Color.White;
+            this.panelContainer.Location = new System.Drawing.Point(253, 29);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(1050, 621);
+            this.panelContainer.TabIndex = 9;
+            // 
+            // frmPrincipal
+            // 
+            this.frmPrincipal.AutoScroll = true;
+            this.frmPrincipal.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.frmPrincipal.Controls.Add(this.panelContainer);
+            this.frmPrincipal.Controls.Add(this.barraVertical);
+            this.frmPrincipal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.frmPrincipal.Location = new System.Drawing.Point(0, 0);
+            this.frmPrincipal.Name = "frmPrincipal";
+            this.frmPrincipal.Size = new System.Drawing.Size(1300, 650);
+            this.frmPrincipal.TabIndex = 8;
+            this.frmPrincipal.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barraVertical_MouseDown);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::wfaVendaIngresso.Properties.Resources.logo_horizontal;
@@ -183,13 +161,28 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // barraVertical
+            // 
+            this.barraVertical.BackColor = System.Drawing.Color.Transparent;
+            this.barraVertical.BackgroundImage = global::wfaVendaIngresso.Properties.Resources.account_circle_white_192x192;
+            this.barraVertical.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.barraVertical.Controls.Add(this.btnMinimizar);
+            this.barraVertical.Controls.Add(this.pnlContainer);
+            this.barraVertical.Controls.Add(this.btnFechar);
+            this.barraVertical.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barraVertical.Location = new System.Drawing.Point(0, 0);
+            this.barraVertical.Name = "barraVertical";
+            this.barraVertical.Size = new System.Drawing.Size(1300, 30);
+            this.barraVertical.TabIndex = 10;
+            this.barraVertical.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barraVertical_MouseDown);
+            // 
             // btnMinimizar
             // 
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.BackColor = System.Drawing.Color.Transparent;
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = global::wfaVendaIngresso.Properties.Resources.icon_minimizar;
-            this.btnMinimizar.Location = new System.Drawing.Point(1228, 12);
+            this.btnMinimizar.Location = new System.Drawing.Point(1229, 3);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(20, 20);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -197,13 +190,20 @@
             this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
             // 
+            // pnlContainer
+            // 
+            this.pnlContainer.Location = new System.Drawing.Point(0, 62);
+            this.pnlContainer.Name = "pnlContainer";
+            this.pnlContainer.Size = new System.Drawing.Size(1059, 588);
+            this.pnlContainer.TabIndex = 11;
+            // 
             // btnFechar
             // 
             this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFechar.BackColor = System.Drawing.Color.Transparent;
             this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFechar.Image = global::wfaVendaIngresso.Properties.Resources.icon_cerrar2;
-            this.btnFechar.Location = new System.Drawing.Point(1269, 12);
+            this.btnFechar.Location = new System.Drawing.Point(1268, 3);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(20, 20);
             this.btnFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -224,8 +224,8 @@
             this.Text = "frmPrincipalUser";
             this.menuVertical.ResumeLayout(false);
             this.frmPrincipal.ResumeLayout(false);
-            this.barraVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.barraVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).EndInit();
             this.ResumeLayout(false);

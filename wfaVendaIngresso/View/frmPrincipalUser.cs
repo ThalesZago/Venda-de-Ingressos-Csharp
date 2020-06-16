@@ -25,17 +25,7 @@ namespace wfaVendaIngresso.View
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hand, int wmsg, int wparam, int lparam);
 
-        private void btnSlider_Click(object sender, EventArgs e)
-        {
-            if (menuVertical.Width == 250)
-            {
-                menuVertical.Width = 71;
-            }
-            else
-            {
-                menuVertical.Width = 250;
-            }
-        }
+    
         private void btnFechar_Click(object sender, EventArgs e)
         {
             Application.Exit();

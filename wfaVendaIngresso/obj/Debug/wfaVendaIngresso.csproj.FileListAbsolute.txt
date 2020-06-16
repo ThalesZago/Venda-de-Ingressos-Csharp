@@ -1,7 +1,6 @@
 C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\bin\Debug\wfaVendaIngresso.exe.config
 C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\bin\Debug\wfaVendaIngresso.exe
 C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\bin\Debug\wfaVendaIngresso.pdb
-C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\obj\Debug\wfaVendaIngresso.csprojAssemblyReference.cache
 C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\obj\Debug\wfaVendaIngresso.Properties.Resources.resources
 C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\obj\Debug\wfaVendaIngresso.csproj.GenerateResource.cache
 C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\obj\Debug\wfaVendaIngresso.csproj.CoreCompileInputs.cache

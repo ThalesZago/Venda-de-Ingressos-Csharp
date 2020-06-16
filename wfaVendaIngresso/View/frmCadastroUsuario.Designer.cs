@@ -46,6 +46,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnFechar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.barraVertical = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -254,6 +255,15 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // barraVertical
+            // 
+            this.barraVertical.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barraVertical.Location = new System.Drawing.Point(0, 0);
+            this.barraVertical.Name = "barraVertical";
+            this.barraVertical.Size = new System.Drawing.Size(1280, 12);
+            this.barraVertical.TabIndex = 36;
+            this.barraVertical.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barraVertical_MouseDown);
+            // 
             // frmCadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -277,8 +287,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblNome);
+            this.Controls.Add(this.barraVertical);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCadastroUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCadastroUsuario";
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -307,5 +319,6 @@
         private System.Windows.Forms.ListBox lbIsAdmin;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel barraVertical;
     }
 }

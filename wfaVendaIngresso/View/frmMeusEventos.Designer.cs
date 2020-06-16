@@ -32,43 +32,43 @@
             this.lblIdEvento5 = new System.Windows.Forms.Label();
             this.lblTituloEvento5 = new System.Windows.Forms.Label();
             this.lblDataEvento5 = new System.Windows.Forms.Label();
-            this.pcbEvento5 = new System.Windows.Forms.PictureBox();
             this.pnEvento4 = new System.Windows.Forms.Panel();
             this.lblIdEvento4 = new System.Windows.Forms.Label();
             this.lblTituloEvento4 = new System.Windows.Forms.Label();
             this.lblDataEvento4 = new System.Windows.Forms.Label();
-            this.pcbEvento4 = new System.Windows.Forms.PictureBox();
             this.pnEvento6 = new System.Windows.Forms.Panel();
             this.lblIdEvento6 = new System.Windows.Forms.Label();
             this.lblTituloEvento6 = new System.Windows.Forms.Label();
             this.lblDataEvento6 = new System.Windows.Forms.Label();
-            this.pcbEvento6 = new System.Windows.Forms.PictureBox();
             this.pnEvento3 = new System.Windows.Forms.Panel();
             this.lblIdEvento3 = new System.Windows.Forms.Label();
             this.lblTituloEvento3 = new System.Windows.Forms.Label();
             this.lblDataEvento3 = new System.Windows.Forms.Label();
-            this.pcbEvento3 = new System.Windows.Forms.PictureBox();
             this.pnEvento2 = new System.Windows.Forms.Panel();
             this.lblIdEvento2 = new System.Windows.Forms.Label();
             this.lblTituloEvento2 = new System.Windows.Forms.Label();
             this.lblDataEvento2 = new System.Windows.Forms.Label();
-            this.pcbEvento2 = new System.Windows.Forms.PictureBox();
             this.pnEvento1 = new System.Windows.Forms.Panel();
             this.lblIdEvento1 = new System.Windows.Forms.Label();
             this.lblTituloEvento1 = new System.Windows.Forms.Label();
             this.lblDataEvento1 = new System.Windows.Forms.Label();
+            this.pcbEvento5 = new System.Windows.Forms.PictureBox();
+            this.pcbEvento4 = new System.Windows.Forms.PictureBox();
+            this.pcbEvento6 = new System.Windows.Forms.PictureBox();
+            this.pcbEvento3 = new System.Windows.Forms.PictureBox();
+            this.pcbEvento2 = new System.Windows.Forms.PictureBox();
             this.pcbEvento1 = new System.Windows.Forms.PictureBox();
             this.pnEvento5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento5)).BeginInit();
             this.pnEvento4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento4)).BeginInit();
             this.pnEvento6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento6)).BeginInit();
             this.pnEvento3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento3)).BeginInit();
             this.pnEvento2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento2)).BeginInit();
             this.pnEvento1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbEvento1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,17 +119,6 @@
             this.lblDataEvento5.Text = "Sáb, 2 de Maio, 12:00H";
             this.lblDataEvento5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pcbEvento5
-            // 
-            this.pcbEvento5.Image = global::wfaVendaIngresso.Properties.Resources.eventoFoto;
-            this.pcbEvento5.Location = new System.Drawing.Point(-7, -1);
-            this.pcbEvento5.Name = "pcbEvento5";
-            this.pcbEvento5.Size = new System.Drawing.Size(283, 135);
-            this.pcbEvento5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbEvento5.TabIndex = 0;
-            this.pcbEvento5.TabStop = false;
-            this.pcbEvento5.Click += new System.EventHandler(this.pcbEvento5_Click);
-            // 
             // pnEvento4
             // 
             this.pnEvento4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -176,17 +165,6 @@
             this.lblDataEvento4.TabIndex = 1;
             this.lblDataEvento4.Text = "Sáb, 2 de Maio, 12:00H";
             this.lblDataEvento4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // pcbEvento4
-            // 
-            this.pcbEvento4.Image = global::wfaVendaIngresso.Properties.Resources.eventoFoto;
-            this.pcbEvento4.Location = new System.Drawing.Point(-7, 0);
-            this.pcbEvento4.Name = "pcbEvento4";
-            this.pcbEvento4.Size = new System.Drawing.Size(283, 135);
-            this.pcbEvento4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbEvento4.TabIndex = 0;
-            this.pcbEvento4.TabStop = false;
-            this.pcbEvento4.Click += new System.EventHandler(this.pcbEvento4_Click);
             // 
             // pnEvento6
             // 
@@ -235,17 +213,6 @@
             this.lblDataEvento6.Text = "Sáb, 2 de Maio, 12:00H";
             this.lblDataEvento6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pcbEvento6
-            // 
-            this.pcbEvento6.Image = global::wfaVendaIngresso.Properties.Resources.eventoFoto;
-            this.pcbEvento6.Location = new System.Drawing.Point(-7, 0);
-            this.pcbEvento6.Name = "pcbEvento6";
-            this.pcbEvento6.Size = new System.Drawing.Size(283, 135);
-            this.pcbEvento6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbEvento6.TabIndex = 0;
-            this.pcbEvento6.TabStop = false;
-            this.pcbEvento6.Click += new System.EventHandler(this.pcbEvento6_Click);
-            // 
             // pnEvento3
             // 
             this.pnEvento3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -292,17 +259,6 @@
             this.lblDataEvento3.TabIndex = 1;
             this.lblDataEvento3.Text = "Sáb, 2 de Maio, 12:00H";
             this.lblDataEvento3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // pcbEvento3
-            // 
-            this.pcbEvento3.Image = global::wfaVendaIngresso.Properties.Resources.eventoFoto;
-            this.pcbEvento3.Location = new System.Drawing.Point(-7, 0);
-            this.pcbEvento3.Name = "pcbEvento3";
-            this.pcbEvento3.Size = new System.Drawing.Size(283, 135);
-            this.pcbEvento3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbEvento3.TabIndex = 0;
-            this.pcbEvento3.TabStop = false;
-            this.pcbEvento3.Click += new System.EventHandler(this.pcbEvento3_Click);
             // 
             // pnEvento2
             // 
@@ -351,17 +307,6 @@
             this.lblDataEvento2.Text = "Sáb, 2 de Maio, 12:00H";
             this.lblDataEvento2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // pcbEvento2
-            // 
-            this.pcbEvento2.Image = global::wfaVendaIngresso.Properties.Resources.eventoFoto;
-            this.pcbEvento2.Location = new System.Drawing.Point(-7, 0);
-            this.pcbEvento2.Name = "pcbEvento2";
-            this.pcbEvento2.Size = new System.Drawing.Size(283, 135);
-            this.pcbEvento2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pcbEvento2.TabIndex = 0;
-            this.pcbEvento2.TabStop = false;
-            this.pcbEvento2.Click += new System.EventHandler(this.pcbEvento2_Click);
-            // 
             // pnEvento1
             // 
             this.pnEvento1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -409,6 +354,61 @@
             this.lblDataEvento1.Text = "Sáb, 2 de Maio, 12:00H";
             this.lblDataEvento1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // pcbEvento5
+            // 
+            this.pcbEvento5.Image = global::wfaVendaIngresso.Properties.Resources.eventoFoto;
+            this.pcbEvento5.Location = new System.Drawing.Point(-7, -1);
+            this.pcbEvento5.Name = "pcbEvento5";
+            this.pcbEvento5.Size = new System.Drawing.Size(283, 135);
+            this.pcbEvento5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbEvento5.TabIndex = 0;
+            this.pcbEvento5.TabStop = false;
+            this.pcbEvento5.Click += new System.EventHandler(this.pcbEvento5_Click);
+            // 
+            // pcbEvento4
+            // 
+            this.pcbEvento4.Image = global::wfaVendaIngresso.Properties.Resources.eventoFoto;
+            this.pcbEvento4.Location = new System.Drawing.Point(-7, 0);
+            this.pcbEvento4.Name = "pcbEvento4";
+            this.pcbEvento4.Size = new System.Drawing.Size(283, 135);
+            this.pcbEvento4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbEvento4.TabIndex = 0;
+            this.pcbEvento4.TabStop = false;
+            this.pcbEvento4.Click += new System.EventHandler(this.pcbEvento4_Click);
+            // 
+            // pcbEvento6
+            // 
+            this.pcbEvento6.Image = global::wfaVendaIngresso.Properties.Resources.eventoFoto;
+            this.pcbEvento6.Location = new System.Drawing.Point(-7, 0);
+            this.pcbEvento6.Name = "pcbEvento6";
+            this.pcbEvento6.Size = new System.Drawing.Size(283, 135);
+            this.pcbEvento6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbEvento6.TabIndex = 0;
+            this.pcbEvento6.TabStop = false;
+            this.pcbEvento6.Click += new System.EventHandler(this.pcbEvento6_Click);
+            // 
+            // pcbEvento3
+            // 
+            this.pcbEvento3.Image = global::wfaVendaIngresso.Properties.Resources.eventoFoto;
+            this.pcbEvento3.Location = new System.Drawing.Point(-7, 0);
+            this.pcbEvento3.Name = "pcbEvento3";
+            this.pcbEvento3.Size = new System.Drawing.Size(283, 135);
+            this.pcbEvento3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbEvento3.TabIndex = 0;
+            this.pcbEvento3.TabStop = false;
+            this.pcbEvento3.Click += new System.EventHandler(this.pcbEvento3_Click);
+            // 
+            // pcbEvento2
+            // 
+            this.pcbEvento2.Image = global::wfaVendaIngresso.Properties.Resources.eventoFoto;
+            this.pcbEvento2.Location = new System.Drawing.Point(-7, 0);
+            this.pcbEvento2.Name = "pcbEvento2";
+            this.pcbEvento2.Size = new System.Drawing.Size(283, 135);
+            this.pcbEvento2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pcbEvento2.TabIndex = 0;
+            this.pcbEvento2.TabStop = false;
+            this.pcbEvento2.Click += new System.EventHandler(this.pcbEvento2_Click);
+            // 
             // pcbEvento1
             // 
             this.pcbEvento1.Image = global::wfaVendaIngresso.Properties.Resources.eventoFoto;
@@ -426,7 +426,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1050, 600);
+            this.ClientSize = new System.Drawing.Size(1050, 621);
             this.Controls.Add(this.pnEvento5);
             this.Controls.Add(this.pnEvento4);
             this.Controls.Add(this.pnEvento6);
@@ -437,16 +437,16 @@
             this.Name = "frmMeusEventos";
             this.Text = "frmMeusEventos";
             this.pnEvento5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento5)).EndInit();
             this.pnEvento4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento4)).EndInit();
             this.pnEvento6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento6)).EndInit();
             this.pnEvento3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento3)).EndInit();
             this.pnEvento2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento2)).EndInit();
             this.pnEvento1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEvento2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbEvento1)).EndInit();
             this.ResumeLayout(false);
 

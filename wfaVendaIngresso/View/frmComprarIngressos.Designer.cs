@@ -47,7 +47,10 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.lblCpf = new System.Windows.Forms.Label();
+            this.barraVertical = new System.Windows.Forms.Panel();
+            this.btnFechar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).BeginInit();
             this.SuspendLayout();
             // 
             // txtConfirmaEmail
@@ -268,6 +271,28 @@
             this.lblCpf.TabIndex = 31;
             this.lblCpf.Text = "Forma de Pagamento:";
             // 
+            // barraVertical
+            // 
+            this.barraVertical.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barraVertical.Location = new System.Drawing.Point(0, 0);
+            this.barraVertical.Name = "barraVertical";
+            this.barraVertical.Size = new System.Drawing.Size(1050, 12);
+            this.barraVertical.TabIndex = 37;
+            this.barraVertical.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barraVertical_MouseDown);
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFechar.Image = global::wfaVendaIngresso.Properties.Resources.icon_cerrar2;
+            this.btnFechar.Location = new System.Drawing.Point(1027, 5);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(20, 20);
+            this.btnFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnFechar.TabIndex = 38;
+            this.btnFechar.TabStop = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
             // frmComprarIngressos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -275,6 +300,8 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1050, 600);
+            this.Controls.Add(this.btnFechar);
+            this.Controls.Add(this.barraVertical);
             this.Controls.Add(this.txtConfirmaEmail);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtSobrenome);
@@ -296,8 +323,10 @@
             this.Controls.Add(this.pictureBox4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmComprarIngressos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmComprarIngressos";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -324,5 +353,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblCpf;
+        private System.Windows.Forms.Panel barraVertical;
+        private System.Windows.Forms.PictureBox btnFechar;
     }
 }

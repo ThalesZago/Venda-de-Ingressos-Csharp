@@ -38,6 +38,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCadastro = new System.Windows.Forms.Button();
+            this.barraVertical = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -175,17 +176,28 @@
             this.btnCadastro.UseVisualStyleBackColor = false;
             this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
+            // barraVertical
+            // 
+            this.barraVertical.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barraVertical.Location = new System.Drawing.Point(0, 0);
+            this.barraVertical.Name = "barraVertical";
+            this.barraVertical.Size = new System.Drawing.Size(1280, 12);
+            this.barraVertical.TabIndex = 36;
+            this.barraVertical.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barraVertical_MouseDown);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(82)))), ((int)(((byte)(86)))), ((int)(((byte)(173)))));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.barraVertical);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -206,5 +218,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnCadastro;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel barraVertical;
     }
 }
