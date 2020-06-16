@@ -5,9 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace wfaVendaIngresso.Classes
-{ 
-    class Cliente : Pessoa
+{
+    class Cliente
     {
-       
     }
 }

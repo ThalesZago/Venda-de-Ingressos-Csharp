@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace wfaVendaIngresso.Classes
 {
-    abstract class Pessoa
+    public class Pessoa
     {
         public String cpf { get; set; }
         public int idUsuario { get; set; }
         public String tipo { get; set; }
         public DateTime dataNascimento { get; set; }
+        public byte[] imgUser { get; set; }
+        public String email { get; set;  }
+        public String username { get; set; }
+        public String password { get; set; }
+        public String isAdmin { get; set; }
         public String nome { get; set; }
         public String telefone { get; set; }
         public String endereco { get; set; }

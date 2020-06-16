@@ -10,25 +10,24 @@ using System.Windows.Forms;
 
 namespace wfaVendaIngresso
 {
-    public partial class frmMinhaConta : Form
+    public partial class frmEditarEventos : Form
     {
-        public frmMinhaConta()
+        public frmEditarEventos()
         {
             InitializeComponent();
         }
 
         private void btnTrocaFoto_Click(object sender, EventArgs e)
         {
-            String imageLocation = "";
             try
             {
                 OpenFileDialog dialog = new OpenFileDialog();
                 dialog.Filter = "jpg files(.*jpg)|*.jpg| PNG files(.*png)|*.png| All Files(*.*)|*.*";
                 if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    imageLocation = dialog.FileName;
-
-                    pcbFotoConta.ImageLocation = imageLocation;
+                    string foto = dialog.FileName.ToString();
+                    txtFoto.Text = foto;
+                    pcbEvento.ImageLocation = foto;
                 }
 
             }
@@ -38,5 +37,12 @@ namespace wfaVendaIngresso
             }
 
         }
+
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
+

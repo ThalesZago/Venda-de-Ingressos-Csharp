@@ -43,29 +43,24 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.menuVertical = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.panelContainer = new System.Windows.Forms.Panel();
+            this.barraVertical = new System.Windows.Forms.Panel();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnFechar = new System.Windows.Forms.PictureBox();
+            this.btnSobre = new System.Windows.Forms.Button();
             this.btnMeusEventos = new System.Windows.Forms.Button();
             this.btnMinhaConta = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.barraVertical = new System.Windows.Forms.Panel();
-            this.btnRestaurar = new System.Windows.Forms.PictureBox();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.btnMaximizar = new System.Windows.Forms.PictureBox();
-            this.btnFechar = new System.Windows.Forms.PictureBox();
-            this.btnSlide = new System.Windows.Forms.PictureBox();
-            this.panelContainer = new System.Windows.Forms.Panel();
+            this.btnCriarEvento = new System.Windows.Forms.Button();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.menuVertical.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.barraVertical.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel7
@@ -237,32 +232,84 @@
             // menuVertical
             // 
             this.menuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.menuVertical.Controls.Add(this.button4);
+            this.menuVertical.Controls.Add(this.btnSobre);
             this.menuVertical.Controls.Add(this.btnMeusEventos);
+            this.menuVertical.Controls.Add(this.btnCriarEvento);
             this.menuVertical.Controls.Add(this.btnMinhaConta);
             this.menuVertical.Controls.Add(this.btnHome);
             this.menuVertical.Controls.Add(this.pictureBox1);
             this.menuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.menuVertical.Location = new System.Drawing.Point(0, 0);
             this.menuVertical.Name = "menuVertical";
-            this.menuVertical.Size = new System.Drawing.Size(250, 650);
+            this.menuVertical.Size = new System.Drawing.Size(252, 650);
             this.menuVertical.TabIndex = 6;
             // 
-            // button4
+            // panelContainer
             // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = global::wfaVendaIngresso.Properties.Resources.empleados;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(3, 246);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(250, 40);
-            this.button4.TabIndex = 1;
-            this.button4.Text = "Minha Conta";
-            this.button4.UseVisualStyleBackColor = true;
+            this.panelContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelContainer.AutoScroll = true;
+            this.panelContainer.BackColor = System.Drawing.Color.White;
+            this.panelContainer.Location = new System.Drawing.Point(252, 66);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(1050, 584);
+            this.panelContainer.TabIndex = 8;
+            // 
+            // barraVertical
+            // 
+            this.barraVertical.Controls.Add(this.btnMinimizar);
+            this.barraVertical.Controls.Add(this.btnFechar);
+            this.barraVertical.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barraVertical.Location = new System.Drawing.Point(252, 0);
+            this.barraVertical.Name = "barraVertical";
+            this.barraVertical.Size = new System.Drawing.Size(1048, 66);
+            this.barraVertical.TabIndex = 9;
+            this.barraVertical.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barraVertical_MouseDown);
+            // 
+            // btnMinimizar
+            // 
+            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizar.BackColor = System.Drawing.Color.Transparent;
+            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinimizar.Image = global::wfaVendaIngresso.Properties.Resources.icon_minimizar;
+            this.btnMinimizar.Location = new System.Drawing.Point(982, 12);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(20, 20);
+            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnMinimizar.TabIndex = 1;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFechar.BackColor = System.Drawing.Color.Transparent;
+            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFechar.Image = global::wfaVendaIngresso.Properties.Resources.icon_cerrar2;
+            this.btnFechar.Location = new System.Drawing.Point(1017, 12);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(20, 20);
+            this.btnFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnFechar.TabIndex = 1;
+            this.btnFechar.TabStop = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
+            // btnSobre
+            // 
+            this.btnSobre.FlatAppearance.BorderSize = 0;
+            this.btnSobre.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnSobre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSobre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSobre.ForeColor = System.Drawing.Color.White;
+            this.btnSobre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSobre.Location = new System.Drawing.Point(3, 296);
+            this.btnSobre.Name = "btnSobre";
+            this.btnSobre.Size = new System.Drawing.Size(250, 40);
+            this.btnSobre.TabIndex = 1;
+            this.btnSobre.Text = "Sobre";
+            this.btnSobre.UseVisualStyleBackColor = true;
+            this.btnSobre.Click += new System.EventHandler(this.btnSobre_Click);
             // 
             // btnMeusEventos
             // 
@@ -271,9 +318,8 @@
             this.btnMeusEventos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMeusEventos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMeusEventos.ForeColor = System.Drawing.Color.White;
-            this.btnMeusEventos.Image = global::wfaVendaIngresso.Properties.Resources.empleados;
             this.btnMeusEventos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMeusEventos.Location = new System.Drawing.Point(3, 203);
+            this.btnMeusEventos.Location = new System.Drawing.Point(3, 253);
             this.btnMeusEventos.Name = "btnMeusEventos";
             this.btnMeusEventos.Size = new System.Drawing.Size(250, 40);
             this.btnMeusEventos.TabIndex = 1;
@@ -288,7 +334,6 @@
             this.btnMinhaConta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinhaConta.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinhaConta.ForeColor = System.Drawing.Color.White;
-            this.btnMinhaConta.Image = global::wfaVendaIngresso.Properties.Resources.empleados;
             this.btnMinhaConta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMinhaConta.Location = new System.Drawing.Point(3, 160);
             this.btnMinhaConta.Name = "btnMinhaConta";
@@ -305,7 +350,6 @@
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHome.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Image = global::wfaVendaIngresso.Properties.Resources.empleados;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.Location = new System.Drawing.Point(3, 117);
             this.btnHome.Name = "btnHome";
@@ -325,96 +369,21 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // barraVertical
+            // btnCriarEvento
             // 
-            this.barraVertical.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.barraVertical.Controls.Add(this.btnRestaurar);
-            this.barraVertical.Controls.Add(this.btnMinimizar);
-            this.barraVertical.Controls.Add(this.btnMaximizar);
-            this.barraVertical.Controls.Add(this.btnFechar);
-            this.barraVertical.Controls.Add(this.btnSlide);
-            this.barraVertical.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barraVertical.Location = new System.Drawing.Point(250, 0);
-            this.barraVertical.Name = "barraVertical";
-            this.barraVertical.Size = new System.Drawing.Size(1050, 50);
-            this.barraVertical.TabIndex = 7;
-            this.barraVertical.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barraVertical_MouseDown);
-            // 
-            // btnRestaurar
-            // 
-            this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRestaurar.Image = global::wfaVendaIngresso.Properties.Resources.icon_restaurar;
-            this.btnRestaurar.Location = new System.Drawing.Point(992, 9);
-            this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Size = new System.Drawing.Size(20, 20);
-            this.btnRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnRestaurar.TabIndex = 1;
-            this.btnRestaurar.TabStop = false;
-            this.btnRestaurar.Visible = false;
-            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
-            // 
-            // btnMinimizar
-            // 
-            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimizar.Image = global::wfaVendaIngresso.Properties.Resources.icon_minimizar;
-            this.btnMinimizar.Location = new System.Drawing.Point(966, 9);
-            this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(20, 20);
-            this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMinimizar.TabIndex = 1;
-            this.btnMinimizar.TabStop = false;
-            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
-            // 
-            // btnMaximizar
-            // 
-            this.btnMaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMaximizar.Image = global::wfaVendaIngresso.Properties.Resources.icon_maximizar;
-            this.btnMaximizar.Location = new System.Drawing.Point(1171, 9);
-            this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(20, 20);
-            this.btnMaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnMaximizar.TabIndex = 1;
-            this.btnMaximizar.TabStop = false;
-            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
-            // 
-            // btnFechar
-            // 
-            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFechar.Image = global::wfaVendaIngresso.Properties.Resources.icon_cerrar2;
-            this.btnFechar.Location = new System.Drawing.Point(1018, 9);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(20, 20);
-            this.btnFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnFechar.TabIndex = 1;
-            this.btnFechar.TabStop = false;
-            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
-            // 
-            // btnSlide
-            // 
-            this.btnSlide.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSlide.Image = global::wfaVendaIngresso.Properties.Resources.Mobile_Menu_Icon;
-            this.btnSlide.Location = new System.Drawing.Point(6, 9);
-            this.btnSlide.Name = "btnSlide";
-            this.btnSlide.Size = new System.Drawing.Size(35, 35);
-            this.btnSlide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnSlide.TabIndex = 0;
-            this.btnSlide.TabStop = false;
-            this.btnSlide.Click += new System.EventHandler(this.btnSlide_Click);
-            // 
-            // panelContainer
-            // 
-            this.panelContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelContainer.AutoScroll = true;
-            this.panelContainer.BackColor = System.Drawing.Color.White;
-            this.panelContainer.Location = new System.Drawing.Point(250, 50);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(1050, 588);
-            this.panelContainer.TabIndex = 8;
+            this.btnCriarEvento.FlatAppearance.BorderSize = 0;
+            this.btnCriarEvento.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnCriarEvento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCriarEvento.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCriarEvento.ForeColor = System.Drawing.Color.White;
+            this.btnCriarEvento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCriarEvento.Location = new System.Drawing.Point(3, 207);
+            this.btnCriarEvento.Name = "btnCriarEvento";
+            this.btnCriarEvento.Size = new System.Drawing.Size(250, 40);
+            this.btnCriarEvento.TabIndex = 1;
+            this.btnCriarEvento.Text = "Criar Evento";
+            this.btnCriarEvento.UseVisualStyleBackColor = true;
+            this.btnCriarEvento.Click += new System.EventHandler(this.btnCriarEvento_Click);
             // 
             // frmPrincipal
             // 
@@ -424,25 +393,23 @@
             this.ClientSize = new System.Drawing.Size(1300, 650);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.barraVertical);
-            this.Controls.Add(this.menuVertical);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
+            this.Controls.Add(this.menuVertical);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.menuVertical.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.barraVertical.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnSlide)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -463,18 +430,16 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Panel menuVertical;
-        private System.Windows.Forms.Panel barraVertical;
-        private System.Windows.Forms.PictureBox btnSlide;
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox btnFechar;
-        private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnMinimizar;
-        private System.Windows.Forms.PictureBox btnRestaurar;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.Button btnMinhaConta;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnSobre;
         private System.Windows.Forms.Button btnMeusEventos;
+        private System.Windows.Forms.Panel barraVertical;
+        private System.Windows.Forms.Button btnCriarEvento;
     }
 }
 

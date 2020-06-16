@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace wfaVendaIngresso
+namespace wfaVendaIngresso.View
 {
-    public partial class frmEditarEventos : Form
+    public partial class frmSobre : Form
     {
-        public frmEditarEventos()
+        public frmSobre()
         {
             InitializeComponent();
         }

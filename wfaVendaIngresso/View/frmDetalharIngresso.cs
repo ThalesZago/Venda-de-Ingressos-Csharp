@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace wfaVendaIngresso
 {
-    public partial class frmMeusIngressos : Form
+    public partial class frmDetalharIngresso : Form
     {
-        public frmMeusIngressos()
+        public frmDetalharIngresso()
         {
             InitializeComponent();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }
