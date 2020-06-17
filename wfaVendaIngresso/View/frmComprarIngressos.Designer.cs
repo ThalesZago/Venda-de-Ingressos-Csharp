@@ -55,6 +55,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnFechar = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.txtNumCartao = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtCvv = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -170,10 +174,10 @@
             this.btnComprarIngresso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnComprarIngresso.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.btnComprarIngresso.ForeColor = System.Drawing.Color.White;
-            this.btnComprarIngresso.Location = new System.Drawing.Point(380, 560);
+            this.btnComprarIngresso.Location = new System.Drawing.Point(381, 627);
             this.btnComprarIngresso.Name = "btnComprarIngresso";
             this.btnComprarIngresso.Size = new System.Drawing.Size(288, 39);
-            this.btnComprarIngresso.TabIndex = 21;
+            this.btnComprarIngresso.TabIndex = 39;
             this.btnComprarIngresso.Text = "Comprar";
             this.btnComprarIngresso.UseVisualStyleBackColor = false;
             this.btnComprarIngresso.Click += new System.EventHandler(this.btnComprarIngresso_Click);
@@ -373,6 +377,46 @@
             this.pictureBox4.TabIndex = 16;
             this.pictureBox4.TabStop = false;
             // 
+            // txtNumCartao
+            // 
+            this.txtNumCartao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNumCartao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtNumCartao.Location = new System.Drawing.Point(14, 561);
+            this.txtNumCartao.Name = "txtNumCartao";
+            this.txtNumCartao.Size = new System.Drawing.Size(308, 26);
+            this.txtNumCartao.TabIndex = 37;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.Location = new System.Drawing.Point(10, 538);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(139, 20);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Número do Cartão";
+            // 
+            // txtCvv
+            // 
+            this.txtCvv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCvv.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtCvv.Location = new System.Drawing.Point(360, 561);
+            this.txtCvv.Name = "txtCvv";
+            this.txtCvv.Size = new System.Drawing.Size(308, 26);
+            this.txtCvv.TabIndex = 38;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label13.ForeColor = System.Drawing.Color.Gray;
+            this.label13.Location = new System.Drawing.Point(356, 538);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(42, 20);
+            this.label13.TabIndex = 42;
+            this.label13.Text = "CVV";
+            // 
             // frmComprarIngressos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -383,10 +427,14 @@
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnFechar);
+            this.Controls.Add(this.txtCvv);
             this.Controls.Add(this.barraVertical);
+            this.Controls.Add(this.txtNumCartao);
             this.Controls.Add(this.txtConfirmaEmail);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtSobrenome);
@@ -439,5 +487,9 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txtNumCartao;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtCvv;
+        private System.Windows.Forms.Label label13;
     }
 }

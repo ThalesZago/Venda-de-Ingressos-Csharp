@@ -67,15 +67,20 @@ namespace wfaVendaIngresso
                 return;
             }
 
-            if(Int32.Parse(cbQtdIngressos.Text) == 0)
+            if ((Int32.Parse(cbQtdIngressos.Text)) == 0)
             {
-                MessageBox.Show("O campo Quantidade de Ingressos não pode ser 0");
+                MessageBox.Show("O campo Quantidade de Ingressos não pode ser 0", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            if(txtConfirmaEmail.Text == "" || txtEmail.Text == "" || txtNome.Text == "" || txtSobrenome.Text == "")
+            if ((cbFormaPagamento.Text == "Crédito" && txtNumCartao.Text == "") || (cbFormaPagamento.Text == "Crédito" && txtCvv.Text == ""))
             {
-                MessageBox.Show("Por favor, preencha todos os campos!");
+                MessageBox.Show("Por favor, preencha todos os campos referentes ao cartão de crédito!");
+            }
+
+            if(txtConfirmaEmail.Text == "" || txtEmail.Text == "" || txtNome.Text == "" || txtSobrenome.Text == "" || txtCvv.Text == "" || txtNumCartao.Text == "")
+            {
+                MessageBox.Show("Por favor, preencha todos os campos!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 

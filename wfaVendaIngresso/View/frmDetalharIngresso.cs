@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -36,6 +37,10 @@ namespace wfaVendaIngresso
             txtQuantidade.Text = ingresso.quantidade.ToString();
             txtFormaPagamento.Text = ingresso.formaPagamento;
             txtDataHora.Text = ingresso.dataHoraEvento.ToString();
+
+            MemoryStream mstream = new MemoryStream(ingresso.imgEvent);
+            pcbFotoIngresso.Image = System.Drawing.Image.FromStream(mstream);
+
 
             pcbQrCode.Image = GerarQRCode(pcbQrCode.Width, pcbQrCode.Height, ingresso.nomeEvento + ingresso.id);
 
