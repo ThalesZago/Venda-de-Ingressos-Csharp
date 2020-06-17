@@ -8,7 +8,7 @@ namespace wfaVendaIngresso.Dao
 {
     public class Conexao
     {
-        string conecta = "DATABASE=vendaingressos; SERVER=localhost; UID=root; PWD=root; Allow User Variables=True";
+        string conecta = "DATABASE=vendaingressos; SERVER=localhost; UID=root; PWD=; Allow User Variables=True";
         protected MySqlConnection conexao = null;
         
         public void openConnection()

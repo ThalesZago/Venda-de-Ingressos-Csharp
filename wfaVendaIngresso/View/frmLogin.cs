@@ -41,7 +41,7 @@ namespace wfaVendaIngresso.View
             List<Pessoa> pessoas = dao.getPessoas(txtUsuarioLogin.Text, txtSenhaLogin.Text);
             if (!pessoas.Any())
             {
-                MessageBox.Show("usuario invalido");
+                MessageBox.Show("Usuário inválido", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if(pessoas[0].isAdmin == "ADMIN")
             {

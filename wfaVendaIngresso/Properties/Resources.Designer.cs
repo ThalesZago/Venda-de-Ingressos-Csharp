@@ -153,6 +153,16 @@ namespace wfaVendaIngresso.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap apolloMinhaContaCerto1 {
+            get {
+                object obj = ResourceManager.GetObject("apolloMinhaContaCerto1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap apolloMinhaContaTamanho {
             get {
                 object obj = ResourceManager.GetObject("apolloMinhaContaTamanho", resourceCulture);

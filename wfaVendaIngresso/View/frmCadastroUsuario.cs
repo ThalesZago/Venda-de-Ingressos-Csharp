@@ -8,9 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using wfaVendaIngresso.Classes;
-using wfaVendaIngresso.Bll;
 using System.Runtime.InteropServices;
-
+using wfaVendaIngresso.Dao;
 namespace wfaVendaIngresso.View
 {
     public partial class frmCadastroUsuario : Form
@@ -28,7 +27,7 @@ namespace wfaVendaIngresso.View
 
         private void cadastraPessoa(Pessoa pessoa)
         {
-            PessoaBll pessoaBll = new PessoaBll();
+            PessoaDAO dao = new PessoaDAO();
 
             
             pessoa.cpf = txtCpf.Text.Replace(".", "");
@@ -38,9 +37,9 @@ namespace wfaVendaIngresso.View
             pessoa.password = txtSenha.Text;
             pessoa.isAdmin = "USER";
 
-            pessoaBll.insert(pessoa);
+            dao.insert(pessoa);
 
-            MessageBox.Show("Usuário Cadastrado com Sucesso!");
+            MessageBox.Show("Usuário cadastrado com sucesso", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         private void btnCriarConta_Click(object sender, EventArgs e)
         {

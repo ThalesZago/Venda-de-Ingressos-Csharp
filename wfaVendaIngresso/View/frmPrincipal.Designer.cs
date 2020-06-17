@@ -53,6 +53,7 @@
             this.barraVertical = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnFechar = new System.Windows.Forms.PictureBox();
+            this.btnMeusIngressos = new System.Windows.Forms.Button();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -232,6 +233,7 @@
             // menuVertical
             // 
             this.menuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.menuVertical.Controls.Add(this.btnMeusIngressos);
             this.menuVertical.Controls.Add(this.btnSobre);
             this.menuVertical.Controls.Add(this.btnMeusEventos);
             this.menuVertical.Controls.Add(this.btnCriarEvento);
@@ -252,7 +254,7 @@
             this.btnSobre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSobre.ForeColor = System.Drawing.Color.White;
             this.btnSobre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSobre.Location = new System.Drawing.Point(3, 289);
+            this.btnSobre.Location = new System.Drawing.Point(3, 332);
             this.btnSobre.Name = "btnSobre";
             this.btnSobre.Size = new System.Drawing.Size(250, 40);
             this.btnSobre.TabIndex = 1;
@@ -269,7 +271,7 @@
             this.btnMeusEventos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMeusEventos.ForeColor = System.Drawing.Color.White;
             this.btnMeusEventos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMeusEventos.Location = new System.Drawing.Point(3, 246);
+            this.btnMeusEventos.Location = new System.Drawing.Point(3, 289);
             this.btnMeusEventos.Name = "btnMeusEventos";
             this.btnMeusEventos.Size = new System.Drawing.Size(250, 40);
             this.btnMeusEventos.TabIndex = 1;
@@ -390,6 +392,23 @@
             this.btnFechar.TabStop = false;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
+            // btnMeusIngressos
+            // 
+            this.btnMeusIngressos.FlatAppearance.BorderSize = 0;
+            this.btnMeusIngressos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnMeusIngressos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMeusIngressos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMeusIngressos.ForeColor = System.Drawing.Color.White;
+            this.btnMeusIngressos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMeusIngressos.Location = new System.Drawing.Point(3, 246);
+            this.btnMeusIngressos.Name = "btnMeusIngressos";
+            this.btnMeusIngressos.Size = new System.Drawing.Size(250, 40);
+            this.btnMeusIngressos.TabIndex = 2;
+            this.btnMeusIngressos.Text = "Meus Ingressos";
+            this.btnMeusIngressos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnMeusIngressos.UseVisualStyleBackColor = true;
+            this.btnMeusIngressos.Click += new System.EventHandler(this.btnMeusIngressos_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -445,6 +464,7 @@
         private System.Windows.Forms.Button btnMeusEventos;
         private System.Windows.Forms.Panel barraVertical;
         private System.Windows.Forms.Button btnCriarEvento;
+        private System.Windows.Forms.Button btnMeusIngressos;
     }
 }
 

@@ -16,8 +16,11 @@ namespace wfaVendaIngresso
 {
     public partial class frmPrincipal : Form
     {
+       
+
         public frmPrincipal()
         {
+            
             InitializeComponent();
             openFormInPanel(new frmHome());
             barraVertical.BackgroundImage = null;
@@ -98,6 +101,19 @@ namespace wfaVendaIngresso
             barraVertical.BackgroundImage = null;
             btnFechar.Image = Properties.Resources.icon_cerrar2;
             btnMinimizar.Image = Properties.Resources.icon_minimizar;
+        }
+
+        private void btnMeusIngressos_Click(object sender, EventArgs e)
+        {
+            openFormInPanel(new frmMeusIngressos());
+            barraVertical.BackgroundImage = null;
+            btnFechar.Image = Properties.Resources.icon_cerrar2;
+            btnMinimizar.Image = Properties.Resources.icon_minimizar;
+        }
+
+        public void handleloadEventos(object sender, EventArgs e)
+        {
+
         }
     }
 }

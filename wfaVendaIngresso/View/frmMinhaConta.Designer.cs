@@ -342,7 +342,7 @@
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::wfaVendaIngresso.Properties.Resources.apolloMinhaContaCerto;
+            this.BackgroundImage = global::wfaVendaIngresso.Properties.Resources.apolloMinhaContaCerto1;
             this.ClientSize = new System.Drawing.Size(1050, 621);
             this.Controls.Add(this.pcbFotoConta);
             this.Controls.Add(this.panel2);

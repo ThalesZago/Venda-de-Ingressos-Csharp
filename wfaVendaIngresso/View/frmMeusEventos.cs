@@ -13,19 +13,23 @@ using wfaVendaIngresso.Dao;
 
 namespace wfaVendaIngresso.View
 {
+
     public partial class frmMeusEventos : Form
     {
         List<Evento> eventos = new List<Evento>();
+        
         public frmMeusEventos()
         {
             InitializeComponent();
             carregarEventos();
         }
 
-
-        private void carregarEventos()
+        
+        public void carregarEventos()
         {
-            EventoDAO dao = new EventoDAO();
+            this.Controls.Clear();
+            Evento
+                DAO dao = new EventoDAO();
 
             eventos = dao.getMeusEventos(View.frmLogin.pessoa.cpf);
 
@@ -163,9 +167,15 @@ namespace wfaVendaIngresso.View
             {
                 if (ev.id == idEvento)
                 {
-                    new frmEditarEventos(ev).ShowDialog();
+                    frmEditarEventos editaEventos = new frmEditarEventos(ev);
+                    editaEventos.loadEventos += carregarEventos;
+                    editaEventos.ShowDialog();
+                    
+                    
                 }
             }
         }
+
+        
     }
 }

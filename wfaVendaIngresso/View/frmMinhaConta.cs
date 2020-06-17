@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using wfaVendaIngresso.Classes;
-using wfaVendaIngresso.Bll;
 using System.IO;
 using MySql.Data.MySqlClient;
+using wfaVendaIngresso.Dao;
 namespace wfaVendaIngresso
 {
     public partial class frmMinhaConta : Form
@@ -23,7 +23,7 @@ namespace wfaVendaIngresso
 
        private void salvar(Pessoa pessoa)
             {
-                PessoaBll pessoaBll = new PessoaBll();
+                PessoaDAO dao = new PessoaDAO();
 
                 MemoryStream mstream = new MemoryStream();
                 pcbFotoConta.Image.Save(mstream, pcbFotoConta.Image.RawFormat);
@@ -42,17 +42,17 @@ namespace wfaVendaIngresso
                 pessoa.estado = txtEstado.Text;
                 pessoa.imgUser = img;
 
-                pessoaBll.update(pessoa);
+                dao.update(pessoa);
 
                 MessageBox.Show("Usuário alterado com sucesso", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
         }
         private void delete(Pessoa pessoa)
         {
-            PessoaBll pessoaBll = new PessoaBll();
 
-          
+            PessoaDAO dao = new PessoaDAO();
+
             pessoa.cpf = txtCpf.Text.Replace(".", "");
-            pessoaBll.delete(pessoa);
+            dao.delete(pessoa);
             Application.Exit();
 
            

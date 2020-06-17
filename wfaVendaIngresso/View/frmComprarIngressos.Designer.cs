@@ -47,17 +47,17 @@
             this.label8 = new System.Windows.Forms.Label();
             this.lblCpf = new System.Windows.Forms.Label();
             this.barraVertical = new System.Windows.Forms.Panel();
-            this.btnFechar = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnFechar = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtConfirmaEmail
@@ -73,7 +73,7 @@
             // 
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtEmail.Location = new System.Drawing.Point(360, 431);
+            this.txtEmail.Location = new System.Drawing.Point(14, 494);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(308, 26);
             this.txtEmail.TabIndex = 35;
@@ -82,7 +82,7 @@
             // 
             this.txtSobrenome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSobrenome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.txtSobrenome.Location = new System.Drawing.Point(14, 495);
+            this.txtSobrenome.Location = new System.Drawing.Point(360, 431);
             this.txtSobrenome.Name = "txtSobrenome";
             this.txtSobrenome.Size = new System.Drawing.Size(308, 26);
             this.txtSobrenome.TabIndex = 34;
@@ -117,24 +117,23 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(938, 447);
+            this.label3.Location = new System.Drawing.Point(329, 435);
             this.label3.MinimumSize = new System.Drawing.Size(0, 30);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 30);
+            this.label3.Size = new System.Drawing.Size(76, 30);
             this.label3.TabIndex = 26;
             this.label3.Text = "R$ 50,00";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label5.ForeColor = System.Drawing.Color.Gray;
-            this.label5.Location = new System.Drawing.Point(938, 482);
+            this.label5.Location = new System.Drawing.Point(331, 470);
             this.label5.MinimumSize = new System.Drawing.Size(0, 30);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(150, 30);
+            this.label5.Size = new System.Drawing.Size(75, 30);
             this.label5.TabIndex = 25;
             this.label5.Text = "R$ 10,00";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -144,7 +143,7 @@
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(63, 475);
+            this.label4.Location = new System.Drawing.Point(64, 475);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(148, 25);
             this.label4.TabIndex = 24;
@@ -153,12 +152,12 @@
             // lblEvent1
             // 
             this.lblEvent1.BackColor = System.Drawing.Color.White;
-            this.lblEvent1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEvent1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEvent1.ForeColor = System.Drawing.Color.Gray;
             this.lblEvent1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lblEvent1.Location = new System.Drawing.Point(788, 123);
+            this.lblEvent1.Location = new System.Drawing.Point(41, 273);
             this.lblEvent1.Name = "lblEvent1";
-            this.lblEvent1.Size = new System.Drawing.Size(244, 40);
+            this.lblEvent1.Size = new System.Drawing.Size(371, 77);
             this.lblEvent1.TabIndex = 22;
             this.lblEvent1.Text = "Sáb, 2 de Maio, 12:00H";
             this.lblEvent1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -184,10 +183,10 @@
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label7.Location = new System.Drawing.Point(249, 560);
+            this.label7.Location = new System.Drawing.Point(298, 557);
             this.label7.MinimumSize = new System.Drawing.Size(0, 30);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(150, 30);
+            this.label7.Size = new System.Drawing.Size(107, 30);
             this.label7.TabIndex = 20;
             this.label7.Text = "R$ 60,00";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -197,7 +196,7 @@
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label6.Location = new System.Drawing.Point(62, 557);
+            this.label6.Location = new System.Drawing.Point(62, 554);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(118, 37);
             this.label6.TabIndex = 19;
@@ -207,11 +206,11 @@
             // lblDetalhesEvento
             // 
             this.lblDetalhesEvento.BackColor = System.Drawing.Color.White;
-            this.lblDetalhesEvento.Font = new System.Drawing.Font("Impact", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDetalhesEvento.Font = new System.Drawing.Font("Impact", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDetalhesEvento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(86)))), ((int)(((byte)(247)))));
-            this.lblDetalhesEvento.Location = new System.Drawing.Point(694, 54);
+            this.lblDetalhesEvento.Location = new System.Drawing.Point(20, 48);
             this.lblDetalhesEvento.Name = "lblDetalhesEvento";
-            this.lblDetalhesEvento.Size = new System.Drawing.Size(432, 58);
+            this.lblDetalhesEvento.Size = new System.Drawing.Size(417, 184);
             this.lblDetalhesEvento.TabIndex = 17;
             this.lblDetalhesEvento.Text = "Live Daybreaker";
             this.lblDetalhesEvento.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -238,6 +237,7 @@
             this.cbQtdIngressos.Name = "cbQtdIngressos";
             this.cbQtdIngressos.Size = new System.Drawing.Size(308, 28);
             this.cbQtdIngressos.TabIndex = 32;
+            this.cbQtdIngressos.SelectedIndexChanged += new System.EventHandler(this.cbQtdIngressos_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -282,29 +282,6 @@
             this.barraVertical.TabIndex = 37;
             this.barraVertical.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barraVertical_MouseDown);
             // 
-            // btnFechar
-            // 
-            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFechar.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.Image")));
-            this.btnFechar.Location = new System.Drawing.Point(1115, 5);
-            this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(20, 20);
-            this.btnFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnFechar.TabIndex = 38;
-            this.btnFechar.TabStop = false;
-            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(-1, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(689, 326);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -321,7 +298,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label10.ForeColor = System.Drawing.Color.Gray;
-            this.label10.Location = new System.Drawing.Point(356, 408);
+            this.label10.Location = new System.Drawing.Point(10, 471);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(57, 20);
             this.label10.TabIndex = 42;
@@ -343,7 +320,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label12.ForeColor = System.Drawing.Color.Gray;
-            this.label12.Location = new System.Drawing.Point(10, 472);
+            this.label12.Location = new System.Drawing.Point(356, 408);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(96, 20);
             this.label12.TabIndex = 44;
@@ -364,10 +341,37 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(689, 12);
+            this.panel1.Controls.Add(this.lblEvent1);
+            this.panel1.Controls.Add(this.lblDetalhesEvento);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Location = new System.Drawing.Point(675, 31);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(452, 666);
+            this.panel1.Size = new System.Drawing.Size(466, 647);
             this.panel1.TabIndex = 46;
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFechar.Image = ((System.Drawing.Image)(resources.GetObject("btnFechar.Image")));
+            this.btnFechar.Location = new System.Drawing.Point(1115, 5);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(20, 20);
+            this.btnFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnFechar.TabIndex = 38;
+            this.btnFechar.TabStop = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(-1, 31);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(670, 295);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 16;
+            this.pictureBox4.TabStop = false;
             // 
             // frmComprarIngressos
             // 
@@ -391,22 +395,17 @@
             this.Controls.Add(this.cbFormaPagamento);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lblCpf);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.lblEvent1);
             this.Controls.Add(this.btnComprarIngresso);
-            this.Controls.Add(this.lblDetalhesEvento);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmComprarIngressos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmComprarIngressos";
-            this.Load += new System.EventHandler(this.frmComprarIngressos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

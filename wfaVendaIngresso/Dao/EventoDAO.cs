@@ -34,7 +34,24 @@ namespace wfaVendaIngresso.Dao
             }
         }
 
-        public void insert(Evento evento)
+        private void insertGerenteEvento(Evento evento, Pessoa pessoa)
+        {
+            try
+            {
+                var comando = conexao.CreateCommand();
+                comando = new MySqlCommand("INSERT INTO gerenteEvento(fk_Pessoa_cpf, fk_Evento_id) VALUES (@cpfPessoa, @idEvento);", conexao);
+                comando.Parameters.AddWithValue("@cpfPessoa", pessoa.cpf);
+                comando.Parameters.AddWithValue("@idEvento", evento.id);
+
+                comando.ExecuteNonQuery();
+            }
+            catch (Exception erro)
+            {
+                throw erro;
+            }
+           
+        }
+        public void insert(Evento evento, Pessoa pessoa)
         {
             
             try
@@ -52,6 +69,8 @@ namespace wfaVendaIngresso.Dao
                 comando.Parameters.AddWithValue("@imgEvent", evento.imgEvent);
 
                 comando.ExecuteNonQuery();
+
+                this.insertGerenteEvento(this.getLastEvento(), pessoa);
             }
             catch (Exception erro)
             {
@@ -97,7 +116,7 @@ namespace wfaVendaIngresso.Dao
                 this.openConnection();
 
                 var command = conexao.CreateCommand();
-                MySqlCommand query = new MySqlCommand("select * from evento", conexao);
+                MySqlCommand query = new MySqlCommand("select * from evento ORDER BY id DESC", conexao);
 
                 DataTable dt = new DataTable();
                 MySqlDataAdapter da = new MySqlDataAdapter(query);
@@ -113,6 +132,28 @@ namespace wfaVendaIngresso.Dao
             {
                 closeConnection();
             }
+        }
+
+
+        public Evento getLastEvento()
+        {
+            try
+            {
+              
+                var command = conexao.CreateCommand();
+                MySqlCommand query = new MySqlCommand("select * from evento ORDER BY id DESC", conexao);
+
+                DataTable dt = new DataTable();
+                MySqlDataAdapter da = new MySqlDataAdapter(query);
+                da.Fill(dt);
+
+                return dt.DataTableToList<Evento>()[0];
+            }
+            catch (Exception erro)
+            {
+                throw erro;
+            }
+          
         }
 
         public List<Evento> getMeusEventos(String cpf)

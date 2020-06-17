@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using wfaVendaIngresso.Classes;
 using wfaVendaIngresso.Dao;
+using wfaVendaIngresso.View;
 
 namespace wfaVendaIngresso
 {
@@ -53,7 +54,9 @@ namespace wfaVendaIngresso
             evento.imgEvent = img;
 
             EventoDAO dao = new EventoDAO();
-            dao.insert(evento);
+            dao.insert(evento, frmLogin.pessoa);
+
+            
 
             MessageBox.Show("Evento cadastrado com sucesso", "Sucesso!");
         }

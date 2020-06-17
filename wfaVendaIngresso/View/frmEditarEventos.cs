@@ -11,19 +11,26 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using wfaVendaIngresso.Classes;
 using wfaVendaIngresso.Dao;
+using wfaVendaIngresso.View;
 
 namespace wfaVendaIngresso
 {
     public partial class frmEditarEventos : Form
     {
-
+        
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]private extern static void SendMessage(System.IntPtr hand, int wmsg, int wparam, int lparam);
 
+        public event Action loadEventos;
         public Evento evento;
         public frmEditarEventos(Evento evento)
         {
+            
             InitializeComponent();
+            if(evento == null)
+            {
+                return;
+            }
             this.evento = evento;
             preencherCampos();
         }
@@ -96,8 +103,14 @@ namespace wfaVendaIngresso
 
             EventoDAO dao = new EventoDAO();
             dao.update(evento);
-
+         
             MessageBox.Show("Evento alterado com sucesso", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            if (loadEventos != null)
+            {
+                loadEventos();
+            }
+           
             this.Hide();
         }
     }

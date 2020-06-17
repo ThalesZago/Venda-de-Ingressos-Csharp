@@ -60,16 +60,6 @@ namespace wfaVendaIngresso
             this.Hide();
         }
 
-        private void frmComprarIngressos_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnComprarIngresso_Click(object sender, EventArgs e)
         {
             if(txtConfirmaEmail.Text != txtEmail.Text)
@@ -78,10 +68,23 @@ namespace wfaVendaIngresso
                 return;
             }
 
+            if(Int32.Parse(cbQtdIngressos.Text) == 0)
+            {
+                MessageBox.Show("O campo Quantidade de Ingressos não pode ser 0");
+                return;
+            }
+
+            if(txtConfirmaEmail.Text == "" || txtEmail.Text == "" || txtNome.Text == "" || txtSobrenome.Text == "")
+            {
+                MessageBox.Show("Por favor, preencha todos os campos!");
+                return;
+            }
+
             Ingresso ingresso = new Ingresso();
             ingresso.idEvento = evento.id;
             ingresso.cpfPessoa = View.frmLogin.pessoa.cpf;
-            ingresso.valor = evento.valorIngresso + evento.valorTaxas;
+            ingresso.valor = (evento.valorTaxas + evento.valorIngresso) * Int32.Parse(cbQtdIngressos.Text);
+            ingresso.quantidade = Int32.Parse(cbQtdIngressos.Text);
             ingresso.formaPagamento = cbFormaPagamento.Text;
 
             IngressoDAO dao = new IngressoDAO();
@@ -90,6 +93,11 @@ namespace wfaVendaIngresso
             MessageBox.Show("Ingresso comprado com sucesso", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             this.Hide();
+        }
+
+        private void cbQtdIngressos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.label7.Text = "R$ " + ((evento.valorTaxas + evento.valorIngresso) * Int32.Parse(cbQtdIngressos.Text)).ToString();
         }
     }
 }

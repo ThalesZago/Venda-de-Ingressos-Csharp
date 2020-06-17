@@ -32,14 +32,34 @@ namespace wfaVendaIngresso
             txtId.Text = ingresso.id.ToString();
             txtNome.Text = ingresso.nomeEvento;
             txtEndereco.Text = ingresso.enderecoEvento;
-            txtValor.Text = ingresso.valor.ToString();
+            txtValor.Text = "R$ " + ingresso.valor.ToString();
             txtQuantidade.Text = ingresso.quantidade.ToString();
             txtFormaPagamento.Text = ingresso.formaPagamento;
             txtDataHora.Text = ingresso.dataHoraEvento.ToString();
+
+            pcbQrCode.Image = GerarQRCode(pcbQrCode.Width, pcbQrCode.Height, ingresso.nomeEvento + ingresso.id);
+
         }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        public Bitmap GerarQRCode(int width, int height, string text)
+        {
+            try
+            {
+                var bw = new ZXing.BarcodeWriter();
+                var encOptions = new ZXing.Common.EncodingOptions() { Width = width, Height = height, Margin = 0 };
+                bw.Options = encOptions;
+                bw.Format = ZXing.BarcodeFormat.QR_CODE;
+                var resultado = new Bitmap(bw.Write(text));
+                return resultado;
+            }
+            catch
+            {
+                throw;
+            }
         }
 
         private void barraVertical_MouseDown(object sender, MouseEventArgs e)

@@ -42,11 +42,13 @@ namespace wfaVendaIngresso.Dao
                
                 openConnection();
                 var comando = conexao.CreateCommand();
-                comando = new MySqlCommand("INSERT INTO Ingresso(valor, formaPagamento, fk_Pessoa_cpf, fk_Evento_id) VALUES (@valor, @formaPagamento, @fk_Pessoa_cpf, @fk_Evento_id)", conexao);
+                comando = new MySqlCommand("INSERT INTO Ingresso(valor, formaPagamento, quantidade, fk_Pessoa_cpf, fk_Evento_id) VALUES (@valor, @formaPagamento, @quantidade, @fk_Pessoa_cpf, @fk_Evento_id)", conexao);
                 comando.Parameters.AddWithValue("@valor", ingresso.valor);
                 comando.Parameters.AddWithValue("@formaPagamento", ingresso.formaPagamento);
+                comando.Parameters.AddWithValue("@quantidade", ingresso.quantidade);
                 comando.Parameters.AddWithValue("@fk_Pessoa_cpf", ingresso.cpfPessoa);
                 comando.Parameters.AddWithValue("@fk_Evento_id", ingresso.idEvento);
+
 
                 comando.ExecuteNonQuery();
             }
@@ -66,9 +68,10 @@ namespace wfaVendaIngresso.Dao
                 
                 openConnection();
                 var comando = conexao.CreateCommand();
-                comando = new MySqlCommand("UPDATE Ingresso SET valor = @valor, formaPagamento = @formaPagamento, fk_Pessoa_cpf = @fk_Pessoa_cpf, fk_Evento_id = @fk_Evento_id WHERE id = @id", conexao);
+                comando = new MySqlCommand("UPDATE Ingresso SET valor = @valor, formaPagamento = @formaPagamento, quantidade = @quantidade, fk_Pessoa_cpf = @fk_Pessoa_cpf, fk_Evento_id = @fk_Evento_id WHERE id = @id", conexao);
                 comando.Parameters.AddWithValue("@valor", ingresso.valor);
                 comando.Parameters.AddWithValue("@formaPagamento", ingresso.formaPagamento);
+                comando.Parameters.AddWithValue("@quantidade", ingresso.formaPagamento);
                 comando.Parameters.AddWithValue("@fk_Pessoa_cpf", ingresso.cpfPessoa);
                 comando.Parameters.AddWithValue("@fk_Evento_id", ingresso.idEvento);
 

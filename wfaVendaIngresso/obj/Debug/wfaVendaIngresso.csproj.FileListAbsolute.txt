@@ -71,7 +71,6 @@ C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\obj\Debug\wfa
 C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\obj\Debug\wfaVendaIngresso.frmPrincipal.resources
 C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\obj\Debug\wfaVendaIngresso.frmMinhaConta.resources
 C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\obj\Debug\wfaVendaIngresso.frmEditarEventos.resources
-C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\obj\Debug\wfaVendaIngresso.frmMeusEventos.resources
 C:\Users\Matheus\Desktop\PROJETO VENDAINGRESSOS\Venda-de-Ingressos-Csharp\wfaVendaIngresso\bin\Debug\wfaVendaIngresso.exe.config
 C:\Users\Matheus\Desktop\PROJETO VENDAINGRESSOS\Venda-de-Ingressos-Csharp\wfaVendaIngresso\bin\Debug\wfaVendaIngresso.exe
 C:\Users\Matheus\Desktop\PROJETO VENDAINGRESSOS\Venda-de-Ingressos-Csharp\wfaVendaIngresso\bin\Debug\wfaVendaIngresso.pdb
@@ -595,3 +594,10 @@ C:\Users\Matheus\Desktop\Venda-de-Ingressos-Csharp\wfaVendaIngresso\obj\Debug\wf
 C:\Users\Matheus\Desktop\Venda-de-Ingressos-Csharp\wfaVendaIngresso\obj\Debug\wfaVendaIngresso.csproj.CopyComplete
 C:\Users\Matheus\Desktop\Venda-de-Ingressos-Csharp\wfaVendaIngresso\obj\Debug\wfaVendaIngresso.exe
 C:\Users\Matheus\Desktop\Venda-de-Ingressos-Csharp\wfaVendaIngresso\obj\Debug\wfaVendaIngresso.pdb
+C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\obj\Debug\wfaVendaIngresso.csprojAssemblyReference.cache
+C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\bin\Debug\zxing.dll
+C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\bin\Debug\zxing.presentation.dll
+C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\bin\Debug\zxing.pdb
+C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\bin\Debug\zxing.xml
+C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\bin\Debug\zxing.presentation.pdb
+C:\Users\UserSoffti\source\repos\solVendaIngresso\wfaVendaIngresso\bin\Debug\zxing.presentation.xml
