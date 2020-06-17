@@ -22,7 +22,6 @@ namespace wfaVendaIngresso
         private extern static void SendMessage(System.IntPtr hand, int wmsg, int wparam, int lparam);
 
         public Evento evento;
-
         public frmComprarIngressos(Evento evento)
         {
             InitializeComponent();
@@ -89,6 +88,7 @@ namespace wfaVendaIngresso
 
             IngressoDAO dao = new IngressoDAO();
             dao.insert(ingresso);
+
 
             MessageBox.Show("Ingresso comprado com sucesso", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

@@ -28,8 +28,7 @@ namespace wfaVendaIngresso.View
         public void carregarEventos()
         {
             this.Controls.Clear();
-            Evento
-                DAO dao = new EventoDAO();
+            EventoDAO dao = new EventoDAO();
 
             eventos = dao.getMeusEventos(View.frmLogin.pessoa.cpf);
 
