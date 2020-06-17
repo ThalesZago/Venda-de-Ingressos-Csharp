@@ -1,4 +1,4 @@
-drop database vendaingressos;
+﻿drop database vendaingressos;
 CREATE DATABASE VendaIngressos;
 USE VendaIngressos;
 
@@ -60,15 +60,17 @@ INSERT INTO pessoa(cpf, tipo, nome, telefone, endereco, bairro, cep, cidade, est
 INSERT INTO pessoa(cpf, tipo, nome, telefone, endereco, bairro, cep, cidade, estado, username, passw, isAdmin) VALUES (52487478511, "Pessoa Física", "José Roberto", "78412459", "Rua dos Girassóis, 4000", "Jardim Villagio", "13145789", "Campinas", "São Paulo", "jo234", "usere", "USER");
 
 INSERT INTO evento(valorRecebido, valorGasto, valorIngresso, valorTaxas, nome, endereco, dataHora) VALUES (50000, 45000, 20.00, 10.00, "Alloha Festival", "Jardim Santo Antônio 105", "2020-08-05 22:00:00");
-INSERT INTO evento(valorRecebido, valorGasto, valorIngresso, valorTaxas, nome, endereco, dataHora) VALUES (1000000, 900000, 80.00, 10.00, "Woodstrofe", "Jd Cambuí Campinas 400", "2020-07-06 22:00:00");
-INSERT INTO evento(valorRecebido, valorGasto, valorIngresso, valorTaxas, nome, endereco, dataHora) VALUES (400000, 200000, 35.00, 10.00, "LolaEletro", "Rua Peaky Blinders 202", "2020-06-08 22:00:00");
-INSERT INTO evento(valorRecebido, valorGasto, valorIngresso, valorTaxas, nome, endereco, dataHora) VALUES (30000, 30000, 10.00, 10.00, "NewRock Festival", "Rua dos Bandeirantes 303", "2020-11-12 22:00:00");
-INSERT INTO evento(valorRecebido, valorGasto, valorIngresso, valorTaxas, nome, endereco, dataHora) VALUES (80000, 70000, 80.00, 10.00, "Live Ades", "Rua Itaquera 1005", "2020-10-04 22:00:00");
-INSERT INTO evento(valorRecebido, valorGasto, valorIngresso, valorTaxas, nome, endereco, dataHora) VALUES (150000, 140000, 55.00, 10.00, "Fuji Rock Festival", "Lago da Serra 1030", "2020-05-04 22:00:00");
-INSERT INTO evento(valorRecebido, valorGasto, valorIngresso, valorTaxas, nome, endereco, dataHora) VALUES (100000, 90000, 23.00, 10.00, "Marcha Para Jesus", "Praça Arautos da Paz, 1000 Campinas", "2020-09-08 22:00:00");
+INSERT INTO evento(valorRecebido, valorGasto, valorIngresso, valorTaxas, nome, endereco, dataHora) VALUES (1000000, 900000, 80.00, 10.00, "Woodstrofe", "Jd Cambuí Campinas 400", "2020-07-06 23:00:00");
+INSERT INTO evento(valorRecebido, valorGasto, valorIngresso, valorTaxas, nome, endereco, dataHora) VALUES (400000, 200000, 35.00, 10.00, "LolaEletro", "Rua Peaky Blinders 202", "2020-06-08 15:00:00");
+INSERT INTO evento(valorRecebido, valorGasto, valorIngresso, valorTaxas, nome, endereco, dataHora) VALUES (30000, 30000, 10.00, 10.00, "NewRock Festival", "Rua dos Bandeirantes 303", "2020-11-12 18:00:00");
+INSERT INTO evento(valorRecebido, valorGasto, valorIngresso, valorTaxas, nome, endereco, dataHora) VALUES (80000, 70000, 80.00, 10.00, "Live Ades", "Rua Itaquera 1005", "2020-10-04 20:00:00");
+INSERT INTO evento(valorRecebido, valorGasto, valorIngresso, valorTaxas, nome, endereco, dataHora) VALUES (150000, 140000, 55.00, 10.00, "Fuji Rock Festival", "Lago da Serra 1030", "2020-05-04 19:00:00");
+INSERT INTO evento(valorRecebido, valorGasto, valorIngresso, valorTaxas, nome, endereco, dataHora) VALUES (100000, 90000, 23.00, 10.00, "Marcha Para Jesus", "Praça Arautos da Paz, 1000 Campinas", "2020-09-08 08:00:00");
 
 INSERT INTO gerenteEvento(fk_Pessoa_cpf, fk_Evento_id) VALUES (45144198762, 1);
 INSERT INTO gerenteEvento(fk_Pessoa_cpf, fk_Evento_id) VALUES (45144198762, 2);
 INSERT INTO gerenteEvento(fk_Pessoa_cpf, fk_Evento_id) VALUES (45144198762, 3);
 INSERT INTO gerenteEvento(fk_Pessoa_cpf, fk_Evento_id) VALUES (45144198762, 4);
+INSERT INTO gerenteEvento(fk_Pessoa_cpf, fk_Evento_id) VALUES (45144198762, 5);
 INSERT INTO gerenteEvento(fk_Pessoa_cpf, fk_Evento_id) VALUES (45144198762, 6);
+INSERT INTO gerenteEvento(fk_Pessoa_cpf, fk_Evento_id) VALUES (45144198762, 7);
