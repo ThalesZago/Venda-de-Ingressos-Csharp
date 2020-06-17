@@ -31,18 +31,18 @@
             this.menuVertical = new System.Windows.Forms.Panel();
             this.btnSobre = new System.Windows.Forms.Button();
             this.btnMeusIngressos = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnMinhaConta = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.frmPrincipal = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.barraVertical = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.pnlContainer = new System.Windows.Forms.Panel();
             this.btnFechar = new System.Windows.Forms.PictureBox();
             this.menuVertical.SuspendLayout();
-            this.frmPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.frmPrincipal.SuspendLayout();
             this.barraVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).BeginInit();
@@ -75,6 +75,7 @@
             this.btnSobre.Size = new System.Drawing.Size(250, 40);
             this.btnSobre.TabIndex = 1;
             this.btnSobre.Text = "Sobre";
+            this.btnSobre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSobre.UseVisualStyleBackColor = true;
             this.btnSobre.Click += new System.EventHandler(this.btnSobre_Click);
             // 
@@ -91,8 +92,19 @@
             this.btnMeusIngressos.Size = new System.Drawing.Size(250, 40);
             this.btnMeusIngressos.TabIndex = 1;
             this.btnMeusIngressos.Text = "Meus Ingressos";
+            this.btnMeusIngressos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMeusIngressos.UseVisualStyleBackColor = true;
             this.btnMeusIngressos.Click += new System.EventHandler(this.btnMeusIngressos_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::wfaVendaIngresso.Properties.Resources.logo_horizontal;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(241, 72);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // btnMinhaConta
             // 
@@ -107,6 +119,7 @@
             this.btnMinhaConta.Size = new System.Drawing.Size(250, 40);
             this.btnMinhaConta.TabIndex = 1;
             this.btnMinhaConta.Text = "Minha Conta";
+            this.btnMinhaConta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMinhaConta.UseVisualStyleBackColor = true;
             this.btnMinhaConta.Click += new System.EventHandler(this.btnMinhaConta_Click);
             // 
@@ -123,6 +136,7 @@
             this.btnHome.Size = new System.Drawing.Size(250, 40);
             this.btnHome.TabIndex = 1;
             this.btnHome.Text = "Home";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
@@ -150,16 +164,6 @@
             this.frmPrincipal.Size = new System.Drawing.Size(1300, 650);
             this.frmPrincipal.TabIndex = 8;
             this.frmPrincipal.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barraVertical_MouseDown);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::wfaVendaIngresso.Properties.Resources.logo_horizontal;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(241, 72);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // barraVertical
             // 
@@ -223,8 +227,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmPrincipalUser";
             this.menuVertical.ResumeLayout(false);
-            this.frmPrincipal.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.frmPrincipal.ResumeLayout(false);
             this.barraVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).EndInit();

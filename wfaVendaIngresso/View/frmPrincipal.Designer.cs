@@ -48,19 +48,19 @@
             this.btnCriarEvento = new System.Windows.Forms.Button();
             this.btnMinhaConta = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelContainer = new System.Windows.Forms.Panel();
             this.barraVertical = new System.Windows.Forms.Panel();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnFechar = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.menuVertical.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.barraVertical.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel7
@@ -252,11 +252,12 @@
             this.btnSobre.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSobre.ForeColor = System.Drawing.Color.White;
             this.btnSobre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSobre.Location = new System.Drawing.Point(3, 296);
+            this.btnSobre.Location = new System.Drawing.Point(3, 289);
             this.btnSobre.Name = "btnSobre";
             this.btnSobre.Size = new System.Drawing.Size(250, 40);
             this.btnSobre.TabIndex = 1;
             this.btnSobre.Text = "Sobre";
+            this.btnSobre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSobre.UseVisualStyleBackColor = true;
             this.btnSobre.Click += new System.EventHandler(this.btnSobre_Click);
             // 
@@ -268,11 +269,12 @@
             this.btnMeusEventos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMeusEventos.ForeColor = System.Drawing.Color.White;
             this.btnMeusEventos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMeusEventos.Location = new System.Drawing.Point(3, 253);
+            this.btnMeusEventos.Location = new System.Drawing.Point(3, 246);
             this.btnMeusEventos.Name = "btnMeusEventos";
             this.btnMeusEventos.Size = new System.Drawing.Size(250, 40);
             this.btnMeusEventos.TabIndex = 1;
             this.btnMeusEventos.Text = "Meus Eventos";
+            this.btnMeusEventos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMeusEventos.UseVisualStyleBackColor = true;
             this.btnMeusEventos.Click += new System.EventHandler(this.btnMeusEventos_Click);
             // 
@@ -284,11 +286,12 @@
             this.btnCriarEvento.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCriarEvento.ForeColor = System.Drawing.Color.White;
             this.btnCriarEvento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCriarEvento.Location = new System.Drawing.Point(3, 207);
+            this.btnCriarEvento.Location = new System.Drawing.Point(3, 203);
             this.btnCriarEvento.Name = "btnCriarEvento";
             this.btnCriarEvento.Size = new System.Drawing.Size(250, 40);
             this.btnCriarEvento.TabIndex = 1;
             this.btnCriarEvento.Text = "Criar Evento";
+            this.btnCriarEvento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCriarEvento.UseVisualStyleBackColor = true;
             this.btnCriarEvento.Click += new System.EventHandler(this.btnCriarEvento_Click);
             // 
@@ -305,6 +308,7 @@
             this.btnMinhaConta.Size = new System.Drawing.Size(250, 40);
             this.btnMinhaConta.TabIndex = 1;
             this.btnMinhaConta.Text = "Minha Conta";
+            this.btnMinhaConta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMinhaConta.UseVisualStyleBackColor = true;
             this.btnMinhaConta.Click += new System.EventHandler(this.btnMinhaConta_Click);
             // 
@@ -321,8 +325,19 @@
             this.btnHome.Size = new System.Drawing.Size(250, 40);
             this.btnHome.TabIndex = 1;
             this.btnHome.Text = "Home";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.UseVisualStyleBackColor = true;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::wfaVendaIngresso.Properties.Resources.logo_horizontal;
+            this.pictureBox1.Location = new System.Drawing.Point(5, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(241, 72);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // panelContainer
             // 
@@ -375,16 +390,6 @@
             this.btnFechar.TabStop = false;
             this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::wfaVendaIngresso.Properties.Resources.logo_horizontal;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(241, 72);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -406,10 +411,10 @@
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.menuVertical.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.barraVertical.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFechar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -1,7 +1,0 @@
-frmHome - Trazer do banco os eventos. Clicar no evento abrir tela de comprar ingressos.
-frmComprarIngressos - Inserir que o cliente comprou o ingresso.
-frmMeusIngressos - Trazer do banco ingressos comprados pelo cliente.
-frmEditarEventos - Update e Delete no banco depois da edição de Eventos
-frmMeusEventos - Trazer do banco os eventos criados pelo ADM.
-frmCriarEventos - Insert no banco para criar o evento.
-frmDetalharIngresso - Trazer do banco os dados do evento que o cliente comprou o ingresso pelo ID

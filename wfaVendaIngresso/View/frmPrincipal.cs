@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using wfaVendaIngresso.View;
 
 namespace wfaVendaIngresso
 {
@@ -18,6 +19,10 @@ namespace wfaVendaIngresso
         public frmPrincipal()
         {
             InitializeComponent();
+            openFormInPanel(new frmHome());
+            barraVertical.BackgroundImage = null;
+            btnFechar.Image = Properties.Resources.icon_cerrar2;
+            btnMinimizar.Image = Properties.Resources.icon_minimizar;
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -42,7 +47,7 @@ namespace wfaVendaIngresso
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void openFormInPanel(object formFilho)
+        public void openFormInPanel(object formFilho)
         {
             if(this.panelContainer.Controls.Count > 0)
             {
@@ -74,7 +79,7 @@ namespace wfaVendaIngresso
         private void btnMeusEventos_Click(object sender, EventArgs e)
         {
             openFormInPanel(new frmMeusEventos());
-            barraVertical.BackgroundImage = null;
+            barraVertical.BackgroundImage = null; 
             btnFechar.Image = Properties.Resources.icon_cerrar2;
             btnMinimizar.Image = Properties.Resources.icon_minimizar;
         }

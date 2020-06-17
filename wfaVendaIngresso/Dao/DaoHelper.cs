@@ -8,15 +8,8 @@ using System.Text;
 
 namespace wfaVendaIngresso.Dao
 {
-    public static class DaoHelper
+    public static class DAOHelper
     {
-
-        /// <summary>
-        /// Converts a DataTable to a list with generic objects
-        /// </summary>
-        /// <typeparam name="T">Generic object</typeparam>
-        /// <param name="table">DataTable</param>
-        /// <returns>List with generic objects</returns>
         public static List<T> DataTableToList<T>(this DataTable table) where T : class, new()
         {
             try

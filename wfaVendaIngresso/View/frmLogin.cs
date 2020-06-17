@@ -38,7 +38,7 @@ namespace wfaVendaIngresso.View
         {
             PessoaDAO dao = new PessoaDAO();
             
-            List<Pessoa> pessoas = dao.getPessoas(txtUsuarioLogin.Text, txtSenhaLogin.Text, lbIsAdmin.Text);
+            List<Pessoa> pessoas = dao.getPessoas(txtUsuarioLogin.Text, txtSenhaLogin.Text);
             if (!pessoas.Any())
             {
                 MessageBox.Show("usuario invalido");
@@ -49,7 +49,6 @@ namespace wfaVendaIngresso.View
                 pessoa = pessoas[0];
                 frmPrincipal principal = new frmPrincipal();
                 principal.ShowDialog();
-                
             }
             else
             {
@@ -57,11 +56,7 @@ namespace wfaVendaIngresso.View
                 pessoa = pessoas[0];
                 frmPrincipalUser user = new frmPrincipalUser();
                 user.ShowDialog();
-                
             }
-
-
-
         }
 
         private void btnCadastro_Click(object sender, EventArgs e)
@@ -75,6 +70,11 @@ namespace wfaVendaIngresso.View
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

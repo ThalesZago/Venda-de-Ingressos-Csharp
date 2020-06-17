@@ -53,10 +53,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblCpf = new System.Windows.Forms.Label();
             this.btnTrocaFoto = new System.Windows.Forms.Button();
-            this.cbTipo = new System.Windows.Forms.ComboBox();
-            this.txtImagem = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.pcbFotoConta = new wfaVendaIngresso.Classes.RoundedPictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -83,21 +79,21 @@
             // 
             // txtEstado
             // 
-            this.txtEstado.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstado.Location = new System.Drawing.Point(32, 229);
             this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(288, 26);
+            this.txtEstado.Size = new System.Drawing.Size(288, 24);
             this.txtEstado.TabIndex = 1;
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(86)))), ((int)(((byte)(247)))));
             this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(179, 268);
+            this.btnDelete.Location = new System.Drawing.Point(179, 319);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(141, 39);
             this.btnDelete.TabIndex = 3;
@@ -108,30 +104,30 @@
             // lblBairro
             // 
             this.lblBairro.AutoSize = true;
-            this.lblBairro.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBairro.Location = new System.Drawing.Point(29, 20);
             this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(46, 20);
+            this.lblBairro.Size = new System.Drawing.Size(52, 18);
             this.lblBairro.TabIndex = 0;
             this.lblBairro.Text = "Bairro:";
             // 
             // txtCidade
             // 
-            this.txtCidade.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCidade.Location = new System.Drawing.Point(32, 167);
             this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(288, 26);
+            this.txtCidade.Size = new System.Drawing.Size(288, 24);
             this.txtCidade.TabIndex = 1;
             // 
             // btnSalvar
             // 
-            this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.btnSalvar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(86)))), ((int)(((byte)(247)))));
             this.btnSalvar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnSalvar.FlatAppearance.BorderSize = 0;
             this.btnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalvar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.ForeColor = System.Drawing.Color.White;
-            this.btnSalvar.Location = new System.Drawing.Point(32, 268);
+            this.btnSalvar.Location = new System.Drawing.Point(32, 319);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(141, 39);
             this.btnSalvar.TabIndex = 3;
@@ -142,46 +138,46 @@
             // lblCep
             // 
             this.lblCep.AutoSize = true;
-            this.lblCep.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCep.Location = new System.Drawing.Point(29, 82);
             this.lblCep.Name = "lblCep";
-            this.lblCep.Size = new System.Drawing.Size(35, 20);
+            this.lblCep.Size = new System.Drawing.Size(43, 18);
             this.lblCep.TabIndex = 0;
             this.lblCep.Text = "CEP:";
             // 
             // txtCep
             // 
-            this.txtCep.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCep.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCep.Location = new System.Drawing.Point(32, 105);
             this.txtCep.Name = "txtCep";
-            this.txtCep.Size = new System.Drawing.Size(288, 26);
+            this.txtCep.Size = new System.Drawing.Size(288, 24);
             this.txtCep.TabIndex = 1;
             // 
             // lblCidade
             // 
             this.lblCidade.AutoSize = true;
-            this.lblCidade.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCidade.Location = new System.Drawing.Point(29, 144);
             this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(52, 20);
+            this.lblCidade.Size = new System.Drawing.Size(58, 18);
             this.lblCidade.TabIndex = 0;
             this.lblCidade.Text = "Cidade:";
             // 
             // txtBairro
             // 
-            this.txtBairro.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBairro.Location = new System.Drawing.Point(32, 43);
             this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(288, 26);
+            this.txtBairro.Size = new System.Drawing.Size(288, 24);
             this.txtBairro.TabIndex = 1;
             // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstado.Location = new System.Drawing.Point(29, 206);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(51, 20);
+            this.lblEstado.Size = new System.Drawing.Size(59, 18);
             this.lblEstado.TabIndex = 0;
             this.lblEstado.Text = "Estado:";
             // 
@@ -207,122 +203,122 @@
             // 
             // txtEndereco
             // 
-            this.txtEndereco.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEndereco.Location = new System.Drawing.Point(12, 353);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(288, 26);
+            this.txtEndereco.Size = new System.Drawing.Size(288, 24);
             this.txtEndereco.TabIndex = 1;
             // 
             // txtTelefone
             // 
-            this.txtTelefone.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTelefone.Location = new System.Drawing.Point(13, 291);
             this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(288, 26);
+            this.txtTelefone.Size = new System.Drawing.Size(288, 24);
             this.txtTelefone.TabIndex = 1;
             // 
             // txtEmail
             // 
-            this.txtEmail.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(12, 229);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(288, 26);
+            this.txtEmail.Size = new System.Drawing.Size(288, 24);
             this.txtEmail.TabIndex = 1;
             // 
             // txtNome
             // 
-            this.txtNome.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Location = new System.Drawing.Point(12, 167);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(288, 26);
+            this.txtNome.Size = new System.Drawing.Size(288, 24);
             this.txtNome.TabIndex = 1;
             // 
             // txtDataNasc
             // 
-            this.txtDataNasc.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataNasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDataNasc.Location = new System.Drawing.Point(12, 105);
             this.txtDataNasc.Name = "txtDataNasc";
-            this.txtDataNasc.Size = new System.Drawing.Size(288, 26);
+            this.txtDataNasc.Size = new System.Drawing.Size(288, 24);
             this.txtDataNasc.TabIndex = 1;
             // 
             // txtCpf
             // 
-            this.txtCpf.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCpf.Location = new System.Drawing.Point(12, 43);
             this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(288, 26);
+            this.txtCpf.Size = new System.Drawing.Size(288, 24);
             this.txtCpf.TabIndex = 1;
             // 
             // lblEndereco
             // 
             this.lblEndereco.AutoSize = true;
-            this.lblEndereco.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEndereco.Location = new System.Drawing.Point(9, 330);
             this.lblEndereco.Name = "lblEndereco";
-            this.lblEndereco.Size = new System.Drawing.Size(61, 20);
+            this.lblEndereco.Size = new System.Drawing.Size(72, 18);
             this.lblEndereco.TabIndex = 0;
             this.lblEndereco.Text = "Endereço";
             // 
             // lblTelefone
             // 
             this.lblTelefone.AutoSize = true;
-            this.lblTelefone.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone.Location = new System.Drawing.Point(10, 268);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(61, 20);
+            this.lblTelefone.Size = new System.Drawing.Size(69, 18);
             this.lblTelefone.TabIndex = 0;
             this.lblTelefone.Text = "Telefone:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(9, 206);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 20);
+            this.label4.Size = new System.Drawing.Size(49, 18);
             this.label4.TabIndex = 0;
             this.label4.Text = "Email:";
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.Location = new System.Drawing.Point(9, 144);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(45, 20);
+            this.lblNome.Size = new System.Drawing.Size(53, 18);
             this.lblNome.TabIndex = 0;
             this.lblNome.Text = "Nome:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(9, 82);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 20);
+            this.label1.Size = new System.Drawing.Size(147, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Data de Nascimento:";
             // 
             // lblCpf
             // 
             this.lblCpf.AutoSize = true;
-            this.lblCpf.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCpf.Location = new System.Drawing.Point(9, 20);
             this.lblCpf.Name = "lblCpf";
-            this.lblCpf.Size = new System.Drawing.Size(34, 20);
+            this.lblCpf.Size = new System.Drawing.Size(42, 18);
             this.lblCpf.TabIndex = 0;
             this.lblCpf.Text = "CPF:";
             // 
             // btnTrocaFoto
             // 
-            this.btnTrocaFoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
+            this.btnTrocaFoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(86)))), ((int)(((byte)(247)))));
             this.btnTrocaFoto.FlatAppearance.BorderSize = 0;
             this.btnTrocaFoto.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnTrocaFoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTrocaFoto.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTrocaFoto.ForeColor = System.Drawing.Color.White;
             this.btnTrocaFoto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTrocaFoto.Location = new System.Drawing.Point(631, 114);
+            this.btnTrocaFoto.Location = new System.Drawing.Point(602, 69);
             this.btnTrocaFoto.Name = "btnTrocaFoto";
             this.btnTrocaFoto.Size = new System.Drawing.Size(250, 40);
             this.btnTrocaFoto.TabIndex = 3;
@@ -330,52 +326,11 @@
             this.btnTrocaFoto.UseVisualStyleBackColor = false;
             this.btnTrocaFoto.Click += new System.EventHandler(this.btnTrocaFoto_Click);
             // 
-            // cbTipo
-            // 
-            this.cbTipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbTipo.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbTipo.FormattingEnabled = true;
-            this.cbTipo.Items.AddRange(new object[] {
-            "Pessoa Física",
-            "Pessoa Jurídica"});
-            this.cbTipo.Location = new System.Drawing.Point(632, 28);
-            this.cbTipo.Name = "cbTipo";
-            this.cbTipo.Size = new System.Drawing.Size(250, 26);
-            this.cbTipo.TabIndex = 4;
-            // 
-            // txtImagem
-            // 
-            this.txtImagem.Font = new System.Drawing.Font("Roboto Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtImagem.Location = new System.Drawing.Point(631, 86);
-            this.txtImagem.Name = "txtImagem";
-            this.txtImagem.Size = new System.Drawing.Size(250, 26);
-            this.txtImagem.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(628, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(36, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Tipo:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(628, 65);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Caminho Imagem:";
-            // 
             // pcbFotoConta
             // 
-            this.pcbFotoConta.Location = new System.Drawing.Point(444, 15);
+            this.pcbFotoConta.Location = new System.Drawing.Point(444, 14);
             this.pcbFotoConta.Name = "pcbFotoConta";
-            this.pcbFotoConta.Size = new System.Drawing.Size(152, 146);
+            this.pcbFotoConta.Size = new System.Drawing.Size(152, 149);
             this.pcbFotoConta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbFotoConta.TabIndex = 5;
             this.pcbFotoConta.TabStop = false;
@@ -391,11 +346,7 @@
             this.ClientSize = new System.Drawing.Size(1050, 621);
             this.Controls.Add(this.pcbFotoConta);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.txtImagem);
-            this.Controls.Add(this.cbTipo);
             this.Controls.Add(this.btnTrocaFoto);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMinhaConta";
@@ -407,7 +358,6 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcbFotoConta)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -435,10 +385,6 @@
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.Label lblEstado;
         private System.Windows.Forms.Button btnTrocaFoto;
-        private System.Windows.Forms.ComboBox cbTipo;
-        private System.Windows.Forms.TextBox txtImagem;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label4;

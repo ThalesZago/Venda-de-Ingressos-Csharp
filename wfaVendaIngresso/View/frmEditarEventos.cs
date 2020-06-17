@@ -3,26 +3,48 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using wfaVendaIngresso.Classes;
+using wfaVendaIngresso.Dao;
 
 namespace wfaVendaIngresso
 {
     public partial class frmEditarEventos : Form
     {
-        public frmEditarEventos()
+
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]private extern static void SendMessage(System.IntPtr hand, int wmsg, int wparam, int lparam);
+
+        public Evento evento;
+        public frmEditarEventos(Evento evento)
         {
             InitializeComponent();
+            this.evento = evento;
+            preencherCampos();
         }
-
-        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
-        private extern static void ReleaseCapture();
-        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
-        private extern static void SendMessage(System.IntPtr hand, int wmsg, int wparam, int lparam);
        
+        private void preencherCampos()
+        {
+            txtNome.Text = evento.nome;
+            txtEndereco.Text = evento.endereco;
+            txtDataHora.Text = evento.dataHora.ToString();
+            txtValorIngresso.Text = evento.valorIngresso.ToString();
+
+            if (evento.imgEvent == null)
+            {
+                pcbEvento.Image = Properties.Resources.apolloCadastroOficial;
+            }
+            else
+            {
+                MemoryStream mstream = new MemoryStream(evento.imgEvent);
+                pcbEvento.Image = System.Drawing.Image.FromStream(mstream);
+            }
+        }
         private void btnTrocaFoto_Click(object sender, EventArgs e)
         {
             try
@@ -32,7 +54,6 @@ namespace wfaVendaIngresso
                 if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
                     string foto = dialog.FileName.ToString();
-                    txtFoto.Text = foto;
                     pcbEvento.ImageLocation = foto;
                 }
 
@@ -58,6 +79,25 @@ namespace wfaVendaIngresso
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
+            this.Hide();
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            MemoryStream mstream = new MemoryStream();
+            pcbEvento.Image.Save(mstream, pcbEvento.Image.RawFormat);
+            byte[] img = mstream.ToArray();
+
+            evento.nome = txtNome.Text;
+            evento.endereco = txtEndereco.Text;
+            evento.dataHora = Convert.ToDateTime(txtDataHora.Text);
+            evento.valorIngresso = Double.Parse(txtValorIngresso.Text);
+            evento.imgEvent = img;
+
+            EventoDAO dao = new EventoDAO();
+            dao.update(evento);
+
+            MessageBox.Show("Evento alterado com sucesso", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Hide();
         }
     }

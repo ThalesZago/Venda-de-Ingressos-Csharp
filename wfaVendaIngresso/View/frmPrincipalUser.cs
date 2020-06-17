@@ -18,6 +18,10 @@ namespace wfaVendaIngresso.View
         public frmPrincipalUser()
         {
             InitializeComponent();
+            openFormInPanel(new frmHome());
+            barraVertical.BackgroundImage = null;
+            btnFechar.Image = Properties.Resources.icon_cerrar2;
+            btnMinimizar.Image = Properties.Resources.icon_minimizar;
         }
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]

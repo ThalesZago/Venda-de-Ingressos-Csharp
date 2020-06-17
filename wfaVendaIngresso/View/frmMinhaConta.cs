@@ -29,8 +29,8 @@ namespace wfaVendaIngresso
                 pcbFotoConta.Image.Save(mstream, pcbFotoConta.Image.RawFormat);
                 byte[] img = mstream.ToArray();
 
-                pessoa.tipo = cbTipo.Text;
-                pessoa.cpf = txtCpf.Text;
+                pessoa.tipo = "Pessoa Física";
+                pessoa.cpf = txtCpf.Text.Replace(".", "");
                 pessoa.dataNascimento = Convert.ToDateTime(txtDataNasc.Text);
                 pessoa.nome = txtNome.Text;
                 pessoa.email = txtEmail.Text;
@@ -44,14 +44,14 @@ namespace wfaVendaIngresso
 
                 pessoaBll.update(pessoa);
 
-                MessageBox.Show("Usuário Atualizado com Sucesso", "Fazendo umas mudanças");
-            }
+                MessageBox.Show("Usuário alterado com sucesso", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+        }
         private void delete(Pessoa pessoa)
         {
             PessoaBll pessoaBll = new PessoaBll();
 
           
-            pessoa.cpf = txtCpf.Text;
+            pessoa.cpf = txtCpf.Text.Replace(".", "");
             pessoaBll.delete(pessoa);
             Application.Exit();
 
@@ -67,7 +67,6 @@ namespace wfaVendaIngresso
                     if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                     {
                         string foto = dialog.FileName.ToString();
-                        txtImagem.Text = foto;
                         pcbFotoConta.ImageLocation = foto;
                     }
 
@@ -89,7 +88,7 @@ namespace wfaVendaIngresso
             pessoa = View.frmLogin.pessoa;
             txtNome.Text = pessoa.nome;
             txtEmail.Text = pessoa.email;
-            txtCpf.Text = pessoa.cpf;
+            txtCpf.Text = pessoa.cpf.ToString();
             txtDataNasc.Text = pessoa.dataNascimento.ToString();
             txtEndereco.Text = pessoa.endereco;
             txtBairro.Text = pessoa.bairro;
@@ -97,7 +96,6 @@ namespace wfaVendaIngresso
             txtCidade.Text = pessoa.cidade;
             txtEstado.Text = pessoa.estado;
             txtTelefone.Text = pessoa.telefone;
-            cbTipo.Text = pessoa.tipo;
 
             if (pessoa.imgUser == null)
             {
@@ -113,14 +111,15 @@ namespace wfaVendaIngresso
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Você tem certeza que deseja excluir sua conta? :c", "Não faça isso por favor!", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Você tem certeza que deseja excluir sua conta?", "Não faça isso por favor!", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                MessageBox.Show("Okay, conta excluída", "O mundo está perdido");
                 delete(pessoa);
+                MessageBox.Show("Conta excluída com sucesso!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                Application.Exit();
             }
             else
             {
-                MessageBox.Show("Ufa, pensei que você iria fazer uma loucura!", "Ainda existem pessoas de bem");
+                MessageBox.Show("Conta excluída com sucesso!", "Sucesso!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
         }
     }

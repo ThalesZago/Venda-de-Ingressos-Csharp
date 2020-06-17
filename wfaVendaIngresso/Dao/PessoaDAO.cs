@@ -103,12 +103,12 @@ namespace wfaVendaIngresso.Dao
             }
         }
 
-        public List<Pessoa> getPessoas(string username, string password, string isAdmin)
+        public List<Pessoa> getPessoas(string username, string password)
         {
             this.openConnection();
 
             var command = conexao.CreateCommand();
-            MySqlCommand query = new MySqlCommand("select * from pessoa where username = '" + username + "' and passw = '" + password + "' and isAdmin = '" + isAdmin + "';", conexao);
+            MySqlCommand query = new MySqlCommand("select * from pessoa where username = '" + username + "' and passw = '" + password + "';", conexao);
 
             DataTable dt = new DataTable();
             MySqlDataAdapter da = new MySqlDataAdapter(query);

@@ -183,7 +183,9 @@
     </Compile>
     <Compile Include="Configuration\Connection.cs" />
     <Compile Include="Dao\Conexao.cs" />
-    <Compile Include="Dao\DaoHelper.cs" />
+    <Compile Include="Dao\DAOHelper.cs" />
+    <Compile Include="Dao\IngressoDAO.cs" />
+    <Compile Include="Dao\EventoDAO.cs" />
     <Compile Include="Dao\PessoaDAO.cs" />
     <Compile Include="View\frmCadastroUsuario.cs">
       <SubType>Form</SubType>
@@ -294,9 +296,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\frmMeusEventos.resx">
-      <DependentUpon>frmMeusEventos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmMeusIngressos.resx">
       <DependentUpon>frmMeusIngressos.cs</DependentUpon>

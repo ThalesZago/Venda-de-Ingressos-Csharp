@@ -31,12 +31,12 @@ namespace wfaVendaIngresso.View
             PessoaBll pessoaBll = new PessoaBll();
 
             
-            pessoa.cpf = txtCpf.Text;
+            pessoa.cpf = txtCpf.Text.Replace(".", "");
             pessoa.nome = txtNome.Text;
             pessoa.email = txtEmail.Text;
             pessoa.username = txtUsuario.Text;
             pessoa.password = txtSenha.Text;
-            pessoa.isAdmin = lbIsAdmin.Text;
+            pessoa.isAdmin = "USER";
 
             pessoaBll.insert(pessoa);
 

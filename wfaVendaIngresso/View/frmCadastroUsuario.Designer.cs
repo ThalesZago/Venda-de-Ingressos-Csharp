@@ -41,7 +41,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.lbIsAdmin = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnFechar = new System.Windows.Forms.PictureBox();
@@ -59,7 +58,7 @@
             this.btnCriarConta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCriarConta.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCriarConta.ForeColor = System.Drawing.Color.White;
-            this.btnCriarConta.Location = new System.Drawing.Point(925, 492);
+            this.btnCriarConta.Location = new System.Drawing.Point(925, 517);
             this.btnCriarConta.Name = "btnCriarConta";
             this.btnCriarConta.Size = new System.Drawing.Size(288, 39);
             this.btnCriarConta.TabIndex = 6;
@@ -70,54 +69,51 @@
             // lblCpf
             // 
             this.lblCpf.AutoSize = true;
-            this.lblCpf.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCpf.ForeColor = System.Drawing.Color.Gray;
-            this.lblCpf.Location = new System.Drawing.Point(922, 108);
+            this.lblCpf.Location = new System.Drawing.Point(924, 123);
             this.lblCpf.Name = "lblCpf";
-            this.lblCpf.Size = new System.Drawing.Size(33, 21);
+            this.lblCpf.Size = new System.Drawing.Size(40, 20);
             this.lblCpf.TabIndex = 0;
             this.lblCpf.Text = "CPF";
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.Gray;
-            this.lblNome.Location = new System.Drawing.Point(921, 170);
+            this.lblNome.Location = new System.Drawing.Point(923, 192);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(44, 21);
+            this.lblNome.Size = new System.Drawing.Size(51, 20);
             this.lblNome.TabIndex = 0;
             this.lblNome.Text = "Nome";
             // 
             // txtCpf
             // 
-            this.txtCpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCpf.Font = new System.Drawing.Font("Roboto Thin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpf.Location = new System.Drawing.Point(928, 136);
+            this.txtCpf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCpf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtCpf.Location = new System.Drawing.Point(925, 146);
             this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(288, 16);
+            this.txtCpf.Size = new System.Drawing.Size(288, 26);
             this.txtCpf.TabIndex = 1;
-            this.txtCpf.Text = "CPF...";
             // 
             // txtEmail
             // 
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Roboto Thin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(927, 265);
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtEmail.Location = new System.Drawing.Point(925, 285);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(288, 16);
+            this.txtEmail.Size = new System.Drawing.Size(288, 26);
             this.txtEmail.TabIndex = 3;
-            this.txtEmail.Text = "Email...";
             // 
             // txtNome
             // 
-            this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNome.Font = new System.Drawing.Font("Roboto Thin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(926, 200);
+            this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtNome.Location = new System.Drawing.Point(924, 215);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(288, 16);
+            this.txtNome.Size = new System.Drawing.Size(288, 26);
             this.txtNome.TabIndex = 2;
-            this.txtNome.Text = "Nome...";
             // 
             // btnFazerLogin
             // 
@@ -136,9 +132,9 @@
             // 
             // lblCadastroUsuario
             // 
-            this.lblCadastroUsuario.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadastroUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadastroUsuario.ForeColor = System.Drawing.Color.Black;
-            this.lblCadastroUsuario.Location = new System.Drawing.Point(911, 41);
+            this.lblCadastroUsuario.Location = new System.Drawing.Point(921, 42);
             this.lblCadastroUsuario.Name = "lblCadastroUsuario";
             this.lblCadastroUsuario.Size = new System.Drawing.Size(272, 50);
             this.lblCadastroUsuario.TabIndex = 5;
@@ -147,86 +143,71 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(922, 237);
+            this.label1.Location = new System.Drawing.Point(922, 262);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 21);
+            this.label1.Size = new System.Drawing.Size(48, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Email";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(921, 296);
+            this.label2.Location = new System.Drawing.Point(924, 331);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 21);
+            this.label2.Size = new System.Drawing.Size(64, 20);
             this.label2.TabIndex = 0;
             this.label2.Text = "Usuario";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(921, 354);
+            this.label3.Location = new System.Drawing.Point(921, 400);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 21);
+            this.label3.Size = new System.Drawing.Size(56, 20);
             this.label3.TabIndex = 0;
             this.label3.Text = "Senha";
             // 
             // txtSenha
             // 
-            this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSenha.Font = new System.Drawing.Font("Roboto Thin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Location = new System.Drawing.Point(925, 378);
+            this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtSenha.Location = new System.Drawing.Point(925, 423);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.Size = new System.Drawing.Size(288, 16);
+            this.txtSenha.Size = new System.Drawing.Size(288, 26);
             this.txtSenha.TabIndex = 5;
-            this.txtSenha.Text = "Senha...";
             // 
             // txtUsuario
             // 
-            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsuario.Font = new System.Drawing.Font("Roboto Thin", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(926, 320);
+            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.txtUsuario.Location = new System.Drawing.Point(925, 354);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(288, 16);
+            this.txtUsuario.Size = new System.Drawing.Size(288, 26);
             this.txtUsuario.TabIndex = 4;
-            this.txtUsuario.Text = "Usuario...";
-            // 
-            // lbIsAdmin
-            // 
-            this.lbIsAdmin.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lbIsAdmin.Font = new System.Drawing.Font("Roboto Thin", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbIsAdmin.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbIsAdmin.FormattingEnabled = true;
-            this.lbIsAdmin.ItemHeight = 25;
-            this.lbIsAdmin.Items.AddRange(new object[] {
-            "USER"});
-            this.lbIsAdmin.Location = new System.Drawing.Point(925, 413);
-            this.lbIsAdmin.Name = "lbIsAdmin";
-            this.lbIsAdmin.Size = new System.Drawing.Size(291, 25);
-            this.lbIsAdmin.TabIndex = 9;
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(924, 621);
+            this.label4.Location = new System.Drawing.Point(914, 624);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(314, 44);
             this.label4.TabIndex = 0;
             this.label4.Text = "É gerente de algum evento e gostaria de ser parceiro da Apollo?";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
             this.label5.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Font = new System.Drawing.Font("Franklin Gothic Medium Cond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(86)))), ((int)(((byte)(247)))));
-            this.label5.Location = new System.Drawing.Point(946, 665);
+            this.label5.Location = new System.Drawing.Point(921, 677);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(314, 25);
             this.label5.TabIndex = 0;
@@ -269,7 +250,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
-            this.Controls.Add(this.lbIsAdmin);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.lblCadastroUsuario);
             this.Controls.Add(this.pictureBox1);
@@ -316,7 +296,6 @@
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.PictureBox btnFechar;
-        private System.Windows.Forms.ListBox lbIsAdmin;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel barraVertical;
